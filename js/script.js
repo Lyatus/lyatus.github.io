@@ -13,6 +13,12 @@ function loadMain(page){
 	var tmp = '';
 	if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
 	if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
+	if(page.images){
+		tmp += '<div id="images">';
+		for(var image in page.images)
+			tmp += '<img src="'+page.images[image]+'"/>';
+		tmp += '</div>';
+	}
 	if(page.content){
 		if(typeof page.content == 'function') page.content = page.content(); // Execute function if dynamic content
 		tmp += page.content;
@@ -31,12 +37,8 @@ function loadProject(key){
 		'title':getProjectTitle(key)
 	};
 	page.content = '';
-	if(projects[key].images){
-		page.content += '<div id="images">';
-		for(var image in projects[key].images)
-			page.content += '<img src="'+projects[key].images[image]+'"/>';
-		page.content += '</div>';
-	}
+	if(projects[key].images)
+		page.images = projects[key].images;
 	if(projects[key].content)
 		page.content += projects[key].content;
 	if(projects[key].links){
