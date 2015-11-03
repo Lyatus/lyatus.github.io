@@ -99,7 +99,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #images img, .thumbnail.sin
 #main h1{line-height: 120px;}
 #main p{
 	text-align: justify;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 #main .link{margin-right: 4px;}
 #images{
