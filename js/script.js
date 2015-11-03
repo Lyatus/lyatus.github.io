@@ -42,10 +42,10 @@ function loadProject(key){
 	if(projects[key].content)
 		page.content += projects[key].content;
 	if(projects[key].links){
-		page.content += '<p>';
+		page.content += '<div id="page_links">';
 		for(var link in projects[key].links)
 			page.content += '<a class="link" href="'+projects[key].links[link].url+'" target="_blank">'+projects[key].links[link].name+'</a>';
-		page.content += '</p>';
+		page.content += '</div>';
 	}
 	loadMain(page);
 }
