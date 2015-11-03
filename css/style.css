@@ -22,7 +22,11 @@ h1, h2, h3{
 }
 h1{font-size: 64px;}
 h2{font-size: 32px;margin-left:32px!important;}
-h3{font-size: 24px;margin-left:64px!important;}
+h2 + p {
+    background-color: #efefef;
+    margin-top: -20px!important;
+    padding-top: 20px!important;
+}
 [onclick]{cursor:pointer;}
 
 #header{overflow: hidden;}
