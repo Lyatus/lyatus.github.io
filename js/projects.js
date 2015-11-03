@@ -25,8 +25,11 @@ var projects = {
 	},
 	'antitris':{
 		'thumbnail':'project/antitris/thumbnail.png',
-		'content':'<p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game\'s grid. It\'s a pretty small project that I developed on my own not long before entering the ENJMIN.</p><p>The game was entirely made in C++, using my <a onclick="loadProject(\'l library\')">personal library</a>.</p>',
-		'images':['project/antitris/ingame.png']
+		'content':
+			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
+			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
+		'images':['project/antitris/ingame.png'],
+		'links':[{'name':'Download for Windows','url':'project/antitris/antitris-win.zip'}]
 	},
 	'l engine':{
 		'content':"<p>L is the name I gave to my personal library. It's written in C++, using the least possible parts of the C++ STL. It's always been halfway between a game engine project and a laboratory, and helpt me learn a lot about the language.</p><p>"
