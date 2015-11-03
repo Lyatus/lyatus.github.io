@@ -22,7 +22,7 @@ var pages = {
 			+'<h2>Libraries</h2>'
 			+'<p>OpenGL, Wwise</p>'
 			+'<h2>Spoken languages</h2>'
-			+'<p>French (mother tongue), English (fluent), Spanish (basic understanding)</p>'
+			+'<p>French (mother tongue), English (fluent)</p>'
 	}
 	/*'ENJMIN':
 		'<h1>ENJMIN</h1>'
