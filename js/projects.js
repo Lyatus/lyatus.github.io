@@ -32,7 +32,13 @@ var projects = {
 		'links':[{'name':'Download for Windows','url':'http://file.luciencatonnet.com/Antitris.zip'}]
 	},
 	'l engine':{
-		'content':"<p>L is the name I gave to my personal library. It's written in C++, using the least possible parts of the C++ STL. It's always been halfway between a game engine project and a laboratory, and helpt me learn a lot about the language.</p><p>"
+		'content':
+			"<h2>Presentation</h2><p>L is the name I gave to my personal C++ library. It started as a laboratory in my first year of bachelor's degree and since then it's always been halfway between a game engine project and a laboratory. I use it to experiment on anything that comes to my mind, and it's a major factor of my ability to code.</p>"
+			+"<h2>Principles</h2><p>While developing the engine, I've ended up making and following a list of basic principles."
+			+"<br/>- Avoid using any part of the STL."
+			+"<br/>- Avoid virtual abstraction."
+			+"<br/>- Anything that behaves similarly in different dimensions should be templatized."
+			+"</p>"
 	},
 	'starpool':{
 		'thumbnail':'project/starpool/thumbnail.png',
