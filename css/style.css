@@ -110,5 +110,5 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #images img, .thumbnail.sin
 	background-color: white; /* Avoid other backgrounds under images */
 }
 #images img{max-width: 420px;display:block;}
-#page_links{margin: 28px 4px;}
 #images img:not(:first-child) {margin-top: 8px;} /* Vertical space inbetween images */
+#page_links{margin: 28px 4px;} /* Separate links from page body */
