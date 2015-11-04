@@ -36,6 +36,9 @@ var projects = {
 	},
 	'starpool':{
 		'thumbnail':'project/starpool/thumbnail.png',
-		'content':"<p>StarPool is a video game developed for the Gaite Game Jam in 2015. I was merely a consultant programmer and game designer. The idea of the game was recreate a kind of pool game (and pinball game) into space, using planets and other massive entities that can be found in space.</p><p>The game was made using Unity.</p>"
+		'content':
+			"<h2>Presentation</h2><p>StarPool is a video game developed with Unity in 72 hours for the Gaite Game Jam in 2015. I was merely a consultant programmer and game designer. The idea of the game was recreate a kind of pool game (and pinball game) into space, using planets and other massive entities that can be found in space. The game was exhibited for two weeks at Gaîté Lyrique in Paris, as one of the selected winners of the game jam.</p>",
+		'images':['project/starpool/screenshot.jpg'],
+		'links':[{'name':'GitHub repository','url':'https://github.com/cuvette/SpacePool'}]
 	}
 };
