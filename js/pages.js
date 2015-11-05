@@ -9,7 +9,12 @@ var pages = {
 		'title':'Curriculum',
 		'content':
 			"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm a 21 year-old video game programming student at ENJMIN. I'm currently looking for an internship as a programmer in a video game studio.</p>"
-			+"<h2>Skills</h2><p><b>Languages</b>: C/C++, C#, Java, PHP, JavaScript, GLSL<br/><b>Middleware</b>: Unreal Engine 4, Visual Studio, Unity, Github, Code::blocks<br/><b>Libraries</b>: OpenGL, Wwise<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)</p>"
+			+"<h2>Skills</h2><p>"
+			+"<b>Languages</b>: C/C++, C#, Java, PHP, JavaScript, GLSL"
+			+"<br/><b>Middleware</b>: Unreal Engine 4, Visual Studio, Unity, Github, Code::blocks"
+			+"<br/><b>Libraries</b>: OpenGL, Wwise"
+			+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
+			+"</p>"
 			+"<h2>Studies</h2><p>"
 			+"ENJMIN: Master's Degree in video game programming (2014 to 2016)"
 			+"<br/>UPJV: Bachelor's Degree in Computer Science (2011 to 2014)"
