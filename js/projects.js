@@ -23,14 +23,6 @@ var projects = {
 		'images':['project/noidd/screenshot.png'],
 		'links':[{'name':'Website','url':'http://noidd.com'}]
 	},
-	'antitris':{
-		'thumbnail':'project/antitris/thumbnail.png',
-		'content':
-			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
-			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
-		'images':['project/antitris/ingame.png'],
-		'links':[{'name':'Download for Windows','url':'http://file.luciencatonnet.com/Antitris.zip'}]
-	},
 	'l engine':{
 		'content':
 			"<h2>Presentation</h2><p>L is the name I gave to my personal C++ library. It started as a laboratory in my first year of bachelor's degree and since then it's always been halfway between a game engine project and a laboratory. I use it to experiment on anything that comes to my mind, and it's a major factor of my ability to code.</p>"
@@ -39,6 +31,14 @@ var projects = {
 			+"<br/>- Avoid virtual abstraction."
 			+"<br/>- Anything that behaves similarly in different dimensions should be templatized."
 			+"</p>"
+	},
+	'antitris':{
+		'thumbnail':'project/antitris/thumbnail.png',
+		'content':
+			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
+			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
+		'images':['project/antitris/ingame.png'],
+		'links':[{'name':'Download for Windows','url':'http://file.luciencatonnet.com/Antitris.zip'}]
 	},
 	'starpool':{
 		'thumbnail':'project/starpool/thumbnail.png',
