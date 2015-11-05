@@ -19,7 +19,7 @@ var projects = {
 		'content':
 			"<h2>Presentation</h2><p>Noidd is a web application enabling its users to share music and videos live. People connect to channels in which they can post videos. Videos are streamed live to every person connected to the channel. People can change the video dynamically, creating a form of conversation.</p>"
 			+"<h2>History</h2><p>I've been working on this project from the very start as a programmer with the help of 4 graphic designers including my brother. We started this project in 2011, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
-			+"<h2>Technology</h2><p>Noidd uses XmlHttpRequest and WebSocket technologies heavily.</p>",
+			+"<h2>Technology</h2><p>Noidd does not make use of any framework. It uses APIs such as YouTube and SoundClound and relies heavily on XmlHttpRequest and WebSocket technologies for synchronization.</p>",
 		'images':['project/noidd/screenshot.png'],
 		'links':[{'name':'Website','url':'http://noidd.com'}]
 	},
