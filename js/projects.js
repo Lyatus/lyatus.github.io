@@ -25,12 +25,13 @@ var projects = {
 	},
 	'l engine':{
 		'content':
-			"<h2>Presentation</h2><p>L is the name I gave to my personal C++ library. It started as a laboratory in my first year of bachelor's degree and since then it's always been halfway between a game engine project and a laboratory. I use it to experiment on anything that comes to my mind, and it's a major factor of my ability to code.</p>"
+			"<h2>Presentation</h2><p>L is the name I gave to my personal C++ library. It started as a laboratory in my first year of bachelor's degree and since then it's always been halfway between a game engine project and a laboratory. I use it to experiment on anything that comes to mind, and it's a major factor of my ability to code.</p>"
 			+"<h2>Principles</h2><p>While developing the engine, I've ended up making and following a list of basic principles."
-			+"<br/>- Avoid using any part of the STL."
-			+"<br/>- Avoid virtual abstraction."
-			+"<br/>- Anything that behaves similarly in different dimensions should be templatized."
+			+"<br/>- Avoid using the C++ Standard Library. Using custom containers is crucial to truly control memory management and that plays a major part in good performance. Also parts of the standard are bloated with unrequired functionality (big up for iostream)."
+			+"<br/>- Avoid using any third-party library (only system libraries and OpenGL-related). Because of this I've written a template class to allow dynamically adding ways of transforming data from or to different kinds of sources (images, models, fonts, anything)."
+			+"<br/>- Anything that behaves similarly in different dimensions should be templatized. Any dimension vector/matrix comes from one definition, this relies on constant loops being optimized by the compiler."
 			+"</p>"
+			+"<h2>Sources</h2><p>I intend to make the sources available at some point but there are still some embarassing pieces of code that need to be rewritten before that.</p>"
 	},
 	'antitris':{
 		'thumbnail':'project/antitris/thumbnail.png',
