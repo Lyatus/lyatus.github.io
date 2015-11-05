@@ -97,10 +97,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #images img, .thumbnail.sin
 	clear: both;
 }
 #main h1{line-height: 120px;}
-#main p{
-	text-align: justify;
-	line-height: 1.3em;
-}
+#main p{line-height: 1.3em;}
 #main .link{margin-right: 4px;}
 #images{
 	float: right;
