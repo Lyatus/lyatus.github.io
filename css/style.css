@@ -33,7 +33,7 @@ h2 + p {
 #header{overflow: hidden;}
 #links{clear:both;}
 #logo, #header, #pages, #main, .block{float: left;}
-#logo, #header, #pages, .block, .thumbnail.single{
+#logo, #header, #pages, .block{
 	display: block;
 	width: 128px;
 	height: 128px;
