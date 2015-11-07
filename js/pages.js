@@ -20,7 +20,7 @@ var pages = {
 			+"<br/>UPJV: Bachelor's Degree in Computer Science (2011 to 2014)"
 			+"<br/>Baccalauréat L (literature), Audiovisual specialization (2011)"
 			+"</p>"
-			+"<h2>Interests</h2><p>I love spending my time watching TV shows and movies (mostly TV shows recently). What drives me the most is clearly programming though, and especially everything low-level.</p>",
+			+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming</p>",
 		'images':['img/photo.jpg']
 	},
 	/*'ENJMIN':
