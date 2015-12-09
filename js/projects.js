@@ -11,7 +11,8 @@ var projects = {
 		'links':[
 			{'name':'English Windows installer','url':'http://file.luciencatonnet.com/Apoptosis_setup_en.exe'},
 			{'name':'French Windows installer','url':'http://file.luciencatonnet.com/Apoptosis_setup_fr.exe'},
-			{'name':'itch.io','url':'http://lutopia.itch.io/apoptosis'}
+			{'name':'itch.io','url':'http://lutopia.itch.io/apoptosis'},
+			{'name':'KillScreen article','url':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/'}
 		]
 	},
 	'noidd':{
