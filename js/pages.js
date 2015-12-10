@@ -16,8 +16,8 @@ var pages = {
 			+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 			+"</p>"
 			+"<h2>Studies</h2><p>"
-			+"ENJMIN: Master's Degree in video game programming (2014 to 2016)"
-			+"<br/>UPJV: Bachelor's Degree in Computer Science (2011 to 2014)"
+			+"<b>Ecole Nationale du Jeu et des Média Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
+			+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
 			+"<br/>Baccalauréat L (literature), Audiovisual specialization (2011)"
 			+"</p>"
 			+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming</p>",
