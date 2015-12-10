@@ -11,6 +11,7 @@ function start(){
 /* Page */
 function loadMain(page){
 	var tmp = '';
+	if(typeof page == 'function') page = page(); // Execute function if dynamic content
 	if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
 	if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
 	if(page.images){
@@ -19,9 +20,13 @@ function loadMain(page){
 			tmp += '<img src="'+page.images[image]+'"/>';
 		tmp += '</div>';
 	}
-	if(page.content){
-		if(typeof page.content == 'function') page.content = page.content(); // Execute function if dynamic content
+	if(page.content)
 		tmp += page.content;
+	if(page.links){
+		tmp += '<div id="page_links">';
+		for(var link in page.links)
+			tmp += '<a class="link" href="'+page.links[link].url+'" target="_blank">'+page.links[link].name+'</a>';
+		tmp += '</div>';
 	}
 	document.getElementById('main').innerHTML = tmp;
 }
@@ -36,17 +41,12 @@ function loadProject(key){
 		'thumbnail':getProjectThumbnail(key),
 		'title':getProjectTitle(key)
 	};
-	page.content = '';
 	if(projects[key].images)
 		page.images = projects[key].images;
 	if(projects[key].content)
-		page.content += projects[key].content;
-	if(projects[key].links){
-		page.content += '<div id="page_links">';
-		for(var link in projects[key].links)
-			page.content += '<a class="link" href="'+projects[key].links[link].url+'" target="_blank">'+projects[key].links[link].name+'</a>';
-		page.content += '</div>';
-	}
+		page.content = projects[key].content;
+	if(projects[key].links)
+		page.links = projects[key].links
 	loadMain(page);
 }
 function getProjectThumbnail(key){
