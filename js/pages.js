@@ -1,10 +1,10 @@
 var pages = {
-	'Projects':{'content':function(){
-		var wtr = '';
+	'Projects':function(){
+		var wtr = {'content':''};
 		for(var key in projects)
-			wtr += '<a class="block background" onclick="loadProject(\''+key+'\')"><img class="thumbnail" src="'+getProjectThumbnail(key)+'"><span>'+getProjectTitle(key)+'</span></a>';
+			wtr.content += '<a class="block background" onclick="loadProject(\''+key+'\')"><img class="thumbnail" src="'+getProjectThumbnail(key)+'"><span>'+getProjectTitle(key)+'</span></a>';
 		return wtr;
-	}},
+	},
 	'Curriculum':{
 		'title':'Curriculum',
 		'content':

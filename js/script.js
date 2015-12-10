@@ -11,6 +11,7 @@ function start(){
 /* Page */
 function loadMain(page){
 	var tmp = '';
+	if(typeof page == 'function') page = page(); // Execute function if dynamic content
 	if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
 	if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
 	if(page.images){
@@ -19,8 +20,7 @@ function loadMain(page){
 			tmp += '<img src="'+page.images[image]+'"/>';
 		tmp += '</div>';
 	}
-	if(page.content){
-		if(typeof page.content == 'function') page.content = page.content(); // Execute function if dynamic content
+	if(page.content)
 		tmp += page.content;
 	}
 	document.getElementById('main').innerHTML = tmp;
