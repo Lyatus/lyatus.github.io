@@ -22,6 +22,11 @@ function loadMain(page){
 	}
 	if(page.content)
 		tmp += page.content;
+	if(page.links){
+		tmp += '<div id="page_links">';
+		for(var link in page.links)
+			tmp += '<a class="link" href="'+page.links[link].url+'" target="_blank">'+page.links[link].name+'</a>';
+		tmp += '</div>';
 	}
 	document.getElementById('main').innerHTML = tmp;
 }
@@ -36,17 +41,12 @@ function loadProject(key){
 		'thumbnail':getProjectThumbnail(key),
 		'title':getProjectTitle(key)
 	};
-	page.content = '';
 	if(projects[key].images)
 		page.images = projects[key].images;
 	if(projects[key].content)
-		page.content += projects[key].content;
-	if(projects[key].links){
-		page.content += '<div id="page_links">';
-		for(var link in projects[key].links)
-			page.content += '<a class="link" href="'+projects[key].links[link].url+'" target="_blank">'+projects[key].links[link].name+'</a>';
-		page.content += '</div>';
-	}
+		page.content = projects[key].content;
+	if(projects[key].links)
+		page.links = projects[key].links
 	loadMain(page);
 }
 function getProjectThumbnail(key){
