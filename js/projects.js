@@ -42,6 +42,7 @@ var projects = {
 		'images':['project/antitris/ingame.png'],
 		'links':[{'name':'Download for Windows','url':'http://file.luciencatonnet.com/Antitris.zip'}]
 	},
+	/*
 	'starpool':{
 		'thumbnail':'project/starpool/thumbnail.png',
 		'content':
@@ -49,4 +50,5 @@ var projects = {
 		'images':['project/starpool/screenshot.jpg'],
 		'links':[{'name':'GitHub repository','url':'https://github.com/cuvette/SpacePool'}]
 	}
+	*/
 };
