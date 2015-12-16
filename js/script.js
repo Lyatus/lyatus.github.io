@@ -40,12 +40,9 @@ function loadProject(key){
 		'thumbnail':getProjectThumbnail(key),
 		'title':getProjectTitle(key)
 	};
-	if(projects[key].images)
-		page.images = projects[key].images;
-	if(projects[key].content)
-		page.content = projects[key].content;
-	if(projects[key].links)
-		page.links = projects[key].links
+	if(projects[key].images) page.images = projects[key].images;
+	if(projects[key].content) page.content = projects[key].content;
+	if(projects[key].links) page.links = projects[key].links
 	loadMain(page);
 }
 function getProjectThumbnail(key){
