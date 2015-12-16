@@ -14,10 +14,11 @@ function loadMain(page){
 	if(typeof page == 'function') page = page(); // Execute function if dynamic content
 	if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
 	if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
-	if(page.images){
+	if(page.media){
 		tmp += '<div id="images">';
-		for(var image in page.images)
-			tmp += '<img src="'+page.images[image]+'"/>';
+		for(var m in page.media)
+			if(page.media[m].img)
+				tmp += '<img src="'+page.media[m].img+'"/>';
 		tmp += '</div>';
 	}
 	if(page.content)

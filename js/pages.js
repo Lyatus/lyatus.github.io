@@ -21,7 +21,7 @@ var pages = {
 			+"<br/>Baccalauréat L (literature), Audiovisual specialization (2011)"
 			+"</p>"
 			+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming</p>",
-		'images':['img/photo.jpg']
+		'media':[{'img':'img/photo.jpg'}]
 	},
 	/*'ENJMIN':
 		'<h1>ENJMIN</h1>'

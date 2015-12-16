@@ -6,7 +6,7 @@ var projects = {
 			+"<h2>Intentions</h2><p>The player's objective is to expand the illness on an organ. We chose this particular position because we wanted to provoke a feeling of uneasiness in order to attain empathy for the characters. The narrative progresses as the disease expands and thus the player feels trapped between wanting to know what comes next and witnessing the effect of his actions.</p>"
 			+"<h2>Design</h2><p>We chose to have one of the most simple interaction possible (a mouse click) to emphasize this \"uneasiness\". The question the game asks to the player is whether he wants to continue or not, without proposing any alternative solution. Even though the expansion of the disease can be graphically pleasant to watch, the interaction has to be practically uninteresting in order to have meaning. It had to be the opposite of fun.</p>"
 			+"<h2>Technology</h2><p>The game uses my own C++ engine, which I had to interface with Wwise as requested by the sound designer. It uses voxels (marching cubes) and cellular automata to attain this special organic feel we wanted for the disease. I did try to implement marching cubes in Unity first but it wasn't fast enough to support per-frame automaton updating. I implemented many things in the engine to support developing this game, including template multidimensional trees for fast space queries, a camera class (and the matrix tools that go with it) and a pool allocator for memory efficiency.</p>",
-		'images':['project/apoptosis/3.png','project/apoptosis/1.png','project/apoptosis/2.png'],
+		'media':[{'img':'project/apoptosis/3.png'},{'img':'project/apoptosis/1.png'},{'img':'project/apoptosis/2.png'}],
 		'links':[
 			{'name':'English Windows installer','url':'http://file.luciencatonnet.com/Apoptosis_setup_en.exe'},
 			{'name':'French Windows installer','url':'http://file.luciencatonnet.com/Apoptosis_setup_fr.exe'},
@@ -20,7 +20,7 @@ var projects = {
 			"<h2>Presentation</h2><p>Noidd is a web application enabling its users to share music and videos live. People connect to channels in which they can post videos. Videos are streamed live to every person connected to the channel. People can change the video dynamically, creating a form of conversation.</p>"
 			+"<h2>History</h2><p>I've been working on this project from the very start as a programmer with the help of 4 graphic designers including my brother. We started this project in 2011, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
 			+"<h2>Technology</h2><p>Noidd does not make use of any framework. It uses APIs such as YouTube and SoundClound and relies heavily on XmlHttpRequest and WebSocket technologies for synchronization.</p>",
-		'images':['project/noidd/screenshot.png'],
+		'media':[{'img':'project/noidd/screenshot.png'}],
 		'links':[{'name':'Website','url':'http://noidd.com'}]
 	},
 	'l engine':{
@@ -38,7 +38,7 @@ var projects = {
 		'content':
 			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
 			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
-		'images':['project/antitris/ingame.png'],
+		'images':[{'img':'project/antitris/ingame.png'}],
 		'links':[{'name':'Download for Windows','url':'http://file.luciencatonnet.com/Antitris.zip'}]
 	},
 	/*
