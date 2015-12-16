@@ -43,7 +43,7 @@ h2 + p {
 h1, h2, h3, #logo, #header, #pages, .link, #header span, .block, #main p, #main p img, .thumbnail.single{
 	padding: 4px;
 }
-h1, h2, h3, #logo, #header, #pages, .block, #main p, #images img, .thumbnail.single{
+h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single{
 	margin: 4px;
 }
 
@@ -100,13 +100,13 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #images img, .thumbnail.sin
 #main h1{line-height: 120px;}
 #main p{line-height: 1.3em;}
 #main .link{margin-right: 4px;}
-#images{
+#media{
 	float: right;
 	margin-left: 4px;
 	padding-left: 4px;
-    padding-bottom: 4px;
-	background-color: white; /* Avoid other backgrounds under images */
+  padding-bottom: 4px;
+	background-color: white; /* Avoid other backgrounds under media */
 }
-#images img{max-width: 420px;display:block;}
-#images img:not(:first-child) {margin-top: 8px;} /* Vertical space inbetween images */
+#media>*{max-width: 420px;display:block;}
+#media>*:not(:first-child){margin-top: 8px;} /* Vertical space inbetween media */
 #page_links{margin: 28px 4px;} /* Separate links from page body */

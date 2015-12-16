@@ -15,7 +15,7 @@ function loadMain(page){
 	if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
 	if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
 	if(page.media){
-		tmp += '<div id="images">';
+		tmp += '<div id="media">';
 		for(var m in page.media)
 			if(page.media[m].img)
 				tmp += '<img src="'+page.media[m].img+'"/>';
