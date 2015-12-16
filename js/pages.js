@@ -12,7 +12,7 @@ var pages = {
 			+"<h2>Skills</h2><p>"
 			+"<b>Languages</b>: C/C++, C#, Java, PHP, JavaScript, GLSL"
 			+"<br/><b>Middleware</b>: Unreal Engine 4, Visual Studio, Code::Blocks, Unity, Git, Perforce"
-			+"<br/><b>Libraries</b>: OpenGL, Wwise"
+			+"<br/><b>Libraries</b>: OpenGL, Wwise, FreeType,"
 			+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 			+"</p>"
 			+"<h2>Studies</h2><p>"
