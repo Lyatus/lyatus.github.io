@@ -36,13 +36,9 @@ function loadPage(key){
 
 /* Project */
 function loadProject(key){
-	var page = {
-		'thumbnail':getProjectThumbnail(key),
-		'title':getProjectTitle(key)
-	};
-	if(projects[key].images) page.images = projects[key].images;
-	if(projects[key].content) page.content = projects[key].content;
-	if(projects[key].links) page.links = projects[key].links
+	var page = projects[key];
+	page.title = getProjectTitle(key);
+	page.thumbnail = getProjectThumbnail(key);
 	loadMain(page);
 }
 function getProjectThumbnail(key){
