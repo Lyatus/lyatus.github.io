@@ -1,4 +1,12 @@
 var projects = {
+	'we savages':{
+		'thumbnail':'project/wesavages/thumbnail.png',
+		'content':
+			"<h2>Presentation</h2><p>We Savages is an student game being developed by a team of 10 people. It's a third-person adventure game in which the main character, a young adult from a poor neighborhood, passionate about photography, tries to climb the social ladder.</p>"
+			+"<h2>Crowds</h2><p>One of my works on the project is to create a crowd system to allow creating riot scenes. I'm currently using flocking with custom vector-field modifying events to model the crowd movements.</p>"
+			+"<h2>Patrols</h2><p>I'm also working on a patrol system, meaning a squad of characters supposed to be looking for the main character. Each member of the squad is able to determine if they can see the target and remembers their latest position and rotation. Because of this, a squad can determine if a certain point in space has been recently seen by one of the members of the squad. This mechanism is how squad members rule out search options and tend to go look at \"non-recently-seen\" locations. The current prototype works with good performance and easily finds most players.</p>",
+		'media':[{'yt':'UciJAgPx7to'}]
+	},
 	'apoptosis':{
 		'thumbnail':'project/apoptosis/thumbnail.png',
 		'content':
