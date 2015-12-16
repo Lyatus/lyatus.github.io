@@ -31,8 +31,7 @@ function loadMain(page){
 	document.getElementById('main').innerHTML = tmp;
 }
 function loadPage(key){
-	if(!key) key = Object.keys(pages)[0];
-	loadMain(pages[key]);
+	loadMain(pages[key||Object.keys(pages)[0]]);
 }
 
 /* Project */
