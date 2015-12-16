@@ -16,7 +16,7 @@ var pages = {
 			+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 			+"</p>"
 			+"<h2>Studies</h2><p>"
-			+"<b>Ecole Nationale du Jeu et des Média Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
+			+"<b>Ecole Nationale du Jeu et des Médias Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
 			+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
 			+"<br/>Baccalauréat L (literature), Audiovisual specialization (2011)"
 			+"</p>"
