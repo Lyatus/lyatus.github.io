@@ -40,12 +40,13 @@ h2 + p {
 }
 
 /* Margin and padding */
-h1, h2, h3, #logo, #header, #pages, .link, #header span, .block, #main p, #main p img, .thumbnail.single{
+h1, h2, h3, #logo, #header, #pages, .link, #header span, .block, .thumbnail.single{
 	padding: 4px;
 }
 h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single{
 	margin: 4px;
 }
+#main p{padding: 8px;}
 
 .background{background-color: #efefef;}
 
