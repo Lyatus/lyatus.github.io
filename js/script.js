@@ -19,6 +19,8 @@ function loadMain(page){
 		for(var m in page.media)
 			if(page.media[m].img)
 				tmp += '<img src="'+page.media[m].img+'"/>';
+			else if(page.media[m].yt)
+				tmp += '<iframe width="420" height="236" src="https://www.youtube.com/embed/'+page.media[m].yt+'" frameborder="0" allowfullscreen></iframe>';
 		tmp += '</div>';
 	}
 	if(page.content)
