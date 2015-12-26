@@ -1,10 +1,7 @@
 #logo .bottom, #logo .left, #logo .center{
-	-webkit-transition: 200ms;
-	transition: 200ms;
+	-webkit-transition: 128ms;
+	transition: 128ms;
 }
-#logo:hover .bottom{
-	width: 32px;
-}
-#logo:hover .center{
-	y: 32px;
-}
+#logo:hover .bottom{width: 32px;}
+#logo:hover .center{height: 96px;}
+#logo:active .center{height: 128px;}
