@@ -95,6 +95,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single
 
 /* Main */
 #main{
+	margin-bottom: 128px;
 	width: 864px;
 	clear: both;
 }
