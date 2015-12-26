@@ -1,10 +1,14 @@
 var main = null;
 var currentPage = "none";
+
+function link(name,url){
+	return '<a class="link" href="'+url+'" target="_blank">'+name+'</a>';
+}
 function start(){
 	main = document.getElementById('main');
 	var linksElement = document.getElementById('links');
 	for(var key in links)
-		linksElement.innerHTML += '<a class="link" href="'+links[key]+'" target="_blank">'+key+'</a>';
+		linksElement.innerHTML += link(key,links[key]);
 	loadPage();
 }
 
@@ -37,8 +41,8 @@ function loadPage(key){
 			tmp += page.content;
 		if(page.links){
 			tmp += '<div id="page_links">';
-			for(var link in page.links)
-				tmp += '<a class="link" href="'+page.links[link].url+'" target="_blank">'+page.links[link].name+'</a>';
+			for(var i in page.links)
+				tmp += link(i,page.links[i]);
 			tmp += '</div>';
 		}
 		pages[key] = tmp;
