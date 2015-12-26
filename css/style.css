@@ -109,7 +109,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single
 	float: right;
 	margin-left: 4px;
 	padding-left: 4px;
-  padding-bottom: 4px;
+	padding-bottom: 4px;
 	background-color: white; /* Avoid other backgrounds under media */
 }
 #media>*{max-width: 420px;display:block;}
