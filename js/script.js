@@ -39,6 +39,23 @@ function loadPage(key){
 		}
 		if(page.content)
 			tmp += page.content;
+		if(page.team){
+			tmp += '<h2>Team</h2><p>';
+			for(var m in page.team){
+				var name = page.team[m];
+				var member = people[name];
+				if(!member) continue;
+				tmp += '<b>'+name+'</b>'
+				if(member.role) tmp += ' ('+member.role+')';
+				if(member.links){
+					tmp += ': ';
+					for(var i in member.links)
+						tmp += link(i,member.links[i]);
+				}
+				tmp += '<br/>';
+			}
+			tmp += '</p>';
+		}
 		if(page.links){
 			tmp += '<div id="page_links">';
 			for(var i in page.links)
