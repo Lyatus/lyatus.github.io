@@ -53,7 +53,8 @@ var people = {
 	'Cyril Malvaux':{
 		'role':'Programmer',
 		'links':{
-			'LinkedIn':'https://fr.linkedin.com/in/cyril-malvaux-492540bb'
+			'LinkedIn':'https://fr.linkedin.com/in/cyril-malvaux-492540bb',
+			'GitHub':'https://github.com/HaltarXS'
 		}
 	},
 	'Romain Ferrand':{
