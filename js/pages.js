@@ -18,7 +18,7 @@ var pages = {
 			+"<h2>Studies</h2><p>"
 			+"<b>Ecole Nationale du Jeu et des Médias Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
 			+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
-			+"<br/>Baccalauréat L (literature), Audiovisual specialization (2011)"
+			+"<br/><b>Lycée Robert de Luzarches</b>: Baccalauréat L (literature), Audiovisual specialization (2011)"
 			+"</p>"
 			+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming</p>",
 		'media':[{'img':'img/photo.jpg'}]
