@@ -46,7 +46,8 @@ var people = {
 		'role':'Programmer',
 		'links':{
 			'Website':'https://axeldeshorsblog.wordpress.com/',
-			'LinkedIn':'https://fr.linkedin.com/in/axel-deshors-7971a4a4'
+			'LinkedIn':'https://fr.linkedin.com/in/axel-deshors-7971a4a4',
+			'GitHub':'https://github.com/Edridan'
 		}
 	},
 	'Cyril Malvaux':{
