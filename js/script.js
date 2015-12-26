@@ -1,7 +1,4 @@
 function start(){
-	var pagesElement = document.getElementById('pages');
-	for(var key in pages)
-		pagesElement.innerHTML += '<a class="link" onclick="loadPage(\''+key+'\')" target="_blank">'+key+'</a>';
 	var linksElement = document.getElementById('links');
 	for(var key in links)
 		linksElement.innerHTML += '<a class="link" href="'+links[key]+'" target="_blank">'+key+'</a>';

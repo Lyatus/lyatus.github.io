@@ -87,7 +87,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single
 #pages a{width: 120px;}
 
 /* Header */
-#header{width: 560px;}
+#header{width: 704px;}
 #header span{
 	display: inline-block;
 	float: left;
