@@ -98,6 +98,7 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single
 	margin-bottom: 128px;
 	width: 864px;
 	clear: both;
+	transition: 64ms;
 }
 #main h1{line-height: 120px;}
 #main p{
