@@ -5,7 +5,7 @@ var pages = {
 			tmp += '<a class="block background" onclick="loadPage(\''+key+'\')"><img class="thumbnail" src="'+getProjectThumbnail(key)+'"><span>'+getProjectTitle(key)+'</span></a>';
 		var wtr = {
 			'content':
-				"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm a 21 year-old video game programming student at ENJMIN. I'm currently looking for an internship as a programmer in a video game studio. Ultimately I want to become a game engine programmer.</p>"
+				"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm a 22 year-old video game programming student at ENJMIN. I'm currently looking for an internship as a programmer in a video game studio. Ultimately I want to become a game engine programmer.</p>"
 				+"<h2>Skills</h2><p>"
 				+"<b>Languages</b>: C/C++, x86, C#, Java, PHP, JavaScript, GLSL"
 				+"<br/><b>Middleware</b>: Unreal Engine 4, Visual Studio, Code::Blocks, Unity, Git, Perforce"
