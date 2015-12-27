@@ -1,5 +1,6 @@
 var projects = {
-	'we savages':{
+	'we-savages':{
+		'title':'We Savages',
 		'thumbnail':'project/wesavages/thumbnail.png',
 		'content':
 			"<h2>Presentation</h2><p>We Savages is a student game currently being developed by a team of 10 people. It's a third-person adventure game in which the main character, a young adult from a poor neighborhood, passionate about photography, tries to climb the social ladder.</p>"
@@ -35,7 +36,8 @@ var projects = {
 		'team':['Léo Catonnet','Benjamin Calméjane'],
 		'links':{'Website':'http://noidd.com'}
 	},
-	'l engine':{
+	'l-engine':{
+		'title':'L Engine',
 		'content':
 			"<h2>Presentation</h2><p>L is the name I gave to my personal C++ library. It started as a laboratory in my first year of bachelor's degree and since then it's always been halfway between a game engine project and a laboratory. I use it to experiment on anything that comes to mind, and it's a major factor of my ability to code.</p>"
 			+"<h2>Principles</h2><p>While developing the engine, I've ended up making and following a list of basic principles."
