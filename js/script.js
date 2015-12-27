@@ -9,14 +9,13 @@ function start(){
 	var linksElement = document.getElementById('links');
 	for(var key in links)
 		linksElement.innerHTML += link(key,links[key]);
-	loadPage();
+	loadPage((hash())?hash():'home');
 }
 
 /* Page */
 function loadPage(key){
 	if(currentPage==key) return;
 	else currentPage = key;
-	if(!key) key = Object.keys(pages)[0];
 	if(!pages[key]){ // It's not a standard page: it's a project
 		pages[key] = projects[key];
 		pages[key].title = getProjectTitle(key);
@@ -68,7 +67,20 @@ function loadPage(key){
 	setTimeout(function(){
 		main.innerHTML = pages[key];
 		main.style.opacity = 1;
+		location = "#"+key;
+		ga('send','pageview');
 	},64);
+}
+
+// History
+function hash(){
+	if(location.hash)
+		return location.hash.substr(1);
+	else return null;
+}
+function hashchange(){
+	var h = hash();
+	if(h) loadPage(h);
 }
 
 /* Project */

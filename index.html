@@ -20,11 +20,10 @@
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-71611348-1', 'auto');
-			ga('send', 'pageview');
 		</script>
 	</head>
-	<body>
-		<a onclick="loadPage()">
+	<body onhashchange="hashchange()">
+		<a onclick="loadPage('home')">
 			<svg id="logo" width="128" height="128" class="background">
 				<rect class="left" x="0" y="0" width="32" height="128" style="fill:#ccc;"/> 
 				<rect class="bottom" x="0" y="96" width="128" height="32" style="fill:#ccc;"/> 
