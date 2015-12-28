@@ -1,8 +1,13 @@
 var pages = {
 	'home':function(){
 		var tmp = '';
-		for(var key in projects)
-			tmp += '<a class="block background" onclick="loadPage(\''+key+'\')"><img class="thumbnail" src="'+getProjectThumbnail(key)+'"><span>'+getProjectTitle(key)+'</span></a>';
+		for(var key in projects){
+			tmp += '<a class="block background" onclick="loadPage(\''+key+'\')">'
+			tmp += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
+			tmp += '<span>'+getProjectTitle(key)+'</span>'
+			if(getProjectPeriod(key)) tmp += '<span class="bottom">'+getProjectPeriod(key)+'</span>'
+			tmp += '</a>';
+		}
 		var wtr = {
 			'content':
 				"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm a 22 year-old video game programming student at ENJMIN. I'm currently looking for an internship as a programmer in a video game studio. Ultimately I want to become a game engine programmer.</p>"

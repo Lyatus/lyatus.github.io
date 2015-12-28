@@ -7,7 +7,8 @@ var projects = {
 			+"<h2>Crowds</h2><p>One of my works on the project is to create a crowd system to allow creating riot scenes. I'm currently using flocking with custom vector-field modifying events to model the crowd movements.</p>"
 			+"<h2>Patrols</h2><p>I'm also working on a patrol system, meaning a squad of characters supposed to be looking for the main character. Each member of the squad is able to determine if they can see the target and remembers their latest position and rotation. Because of this, a squad can determine if a certain point in space has been recently seen by one of the members of the squad. This mechanism is how squad members rule out search options and tend to go look at \"non-recently-seen\" locations. The current prototype works with good performance and easily finds most players.</p>",
 		'media':[{'yt':'UciJAgPx7to'},{'img':'project/wesavages/screen0.png'}],
-		'team':['François Rizzo','Anthony Krafft','Axel Deshors','Cyril Malvaux','Romain Ferrand','Baptiste Poligné','Pierre-Yves Revellin','Marc-Antoine Archier','Victor Gibaud']
+		'team':['François Rizzo','Anthony Krafft','Axel Deshors','Cyril Malvaux','Romain Ferrand','Baptiste Poligné','Pierre-Yves Revellin','Marc-Antoine Archier','Victor Gibaud'],
+		'start':'Oct. 2015'
 	},
 	'apoptosis':{
 		'thumbnail':'project/apoptosis/thumbnail.png',
@@ -24,17 +25,20 @@ var projects = {
 			'itch.io':'http://lutopia.itch.io/apoptosis',
 			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
 			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous/.html'
-		}
+		},
+		'start':'Mar. 2015',
+		'end':'Jun. 2015'
 	},
 	'noidd':{
 		'thumbnail':'project/noidd/thumbnail.png',
 		'content':
 			"<h2>Presentation</h2><p>Noidd is a web application enabling its users to share music and videos live. People connect to channels in which they can post videos. Videos are streamed live to every person connected to the channel. People can change the video dynamically, creating a form of conversation.</p>"
-			+"<h2>History</h2><p>I've been working on this project from the very start as the sole programmer with the help of 4 graphic designers including my brother. We started this project in 2011, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
+			+"<h2>History</h2><p>I've been working on this project from the very start as the sole programmer with the help of 4 graphic designers including my brother. We started this project in 2010, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
 			+"<h2>Technology</h2><p>Noidd does not make use of any framework. It uses APIs such as YouTube and SoundClound and relies heavily on XmlHttpRequest and WebSocket technologies for synchronization.</p>",
 		'media':[{'img':'project/noidd/screenshot.png'}],
 		'team':['Léo Catonnet','Benjamin Calméjane'],
-		'links':{'Website':'http://noidd.com'}
+		'links':{'Website':'http://noidd.com'},
+		'start':'2010'
 	},
 	'l-engine':{
 		'title':'L Engine',
@@ -45,7 +49,8 @@ var projects = {
 			+"<br/>- Avoid using any third-party library (only system libraries and OpenGL-related). Because of this I've written a template class to allow dynamically adding ways of transforming data from or to different kinds of sources (images, models, fonts, anything)."
 			+"<br/>- Anything that behaves similarly in different dimensions should be templatized. Any dimension vector/matrix comes from one definition, this relies on constant loops being optimized by the compiler."
 			+"</p>"
-			+"<h2>Sources</h2><p>I intend to make the sources available at some point but there are still some embarassing pieces of code that need to be rewritten before that.</p>"
+			+"<h2>Sources</h2><p>I intend to make the sources available at some point but there are still some embarassing pieces of code that need to be rewritten before that.</p>",
+		'start':'2011'
 	},
 	'antitris':{
 		'thumbnail':'project/antitris/thumbnail.png',
@@ -71,4 +76,14 @@ function getProjectThumbnail(key){
 }
 function getProjectTitle(key){
 	return (projects[key].title)?projects[key].title:capitalize(key);
+}
+function getProjectPeriod(key){
+	if(projects[key].start){
+		if(projects[key].end){
+			if(projects[key].start==projects[key].end) return projects[key].start;
+			else return projects[key].start+' to '+projects[key].end;
+		}
+		else return projects[key].start+' to now';
+	}
+	return false;
 }

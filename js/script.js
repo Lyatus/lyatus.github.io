@@ -22,6 +22,7 @@ function loadPage(key){
 	if(!pages[key]){ // It's not a standard page: it's a project
 		pages[key] = projects[key];
 		pages[key].title = getProjectTitle(key);
+		pages[key].subtitle = getProjectPeriod(key);
 		pages[key].thumbnail = getProjectThumbnail(key);
 	}
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
@@ -29,7 +30,11 @@ function loadPage(key){
 		var page = pages[key];
 		var tmp = '';
 		if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
-		if(page.title) tmp += '<h1 class="title background">'+page.title+'</h1>';
+		if(page.title){
+			tmp += '<h1 class="title background">'+page.title;
+			if(page.subtitle) tmp += '<span>'+page.subtitle+'</span>';
+			tmp += '</h1>';
+		}
 		if(page.media){
 			tmp += '<div id="media">';
 			for(var m in page.media)
