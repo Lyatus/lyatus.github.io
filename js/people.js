@@ -53,6 +53,7 @@ var people = {
 	'Cyril Malvaux':{
 		'role':'Programmer',
 		'links':{
+			'Website':'https://cyrilmalvaux.wordpress.com/',
 			'LinkedIn':'https://fr.linkedin.com/in/cyril-malvaux-492540bb',
 			'GitHub':'https://github.com/HaltarXS'
 		}
