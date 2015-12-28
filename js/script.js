@@ -4,6 +4,9 @@ var currentPage = "none";
 function link(name,url){
 	return '<a class="link" href="'+url+'" target="_blank">'+name+'</a>';
 }
+function capitalize(str){
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
 function start(){
 	main = document.getElementById('main');
 	var linksElement = document.getElementById('links');
@@ -81,15 +84,4 @@ function hash(){
 function hashchange(){
 	var h = hash();
 	if(h) loadPage(h);
-}
-
-/* Project */
-function getProjectThumbnail(key){
-	return (projects[key].thumbnail)?projects[key].thumbnail:'img/logo.png';
-}
-function getProjectTitle(key){
-	return (projects[key].title)?projects[key].title:capitalize(key);
-}
-function capitalize(str){
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }

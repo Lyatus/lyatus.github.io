@@ -65,3 +65,10 @@ var projects = {
 	}
 	*/
 };
+
+function getProjectThumbnail(key){
+	return (projects[key].thumbnail)?projects[key].thumbnail:'img/logo.png';
+}
+function getProjectTitle(key){
+	return (projects[key].title)?projects[key].title:capitalize(key);
+}
