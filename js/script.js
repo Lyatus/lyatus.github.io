@@ -68,7 +68,7 @@ function loadPage(key){
 		main.innerHTML = pages[key];
 		main.style.opacity = 1;
 		location = "#"+key;
-		ga('send','pageview');
+		ga('send','pageview',location.pathname+location.hash);
 	},64);
 }
 
