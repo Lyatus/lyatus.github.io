@@ -114,4 +114,4 @@ h1, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single
 }
 #media>*{max-width: 420px;display:block;}
 #media>*:not(:first-child){margin-top: 8px;} /* Vertical space inbetween media */
-#page_links{margin: 28px 4px;} /* Separate links from page body */
+#page_links{margin-top: 28px;} /* Separate links from page body */
