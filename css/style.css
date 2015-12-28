@@ -29,6 +29,7 @@ h2 + p {
     padding-top: 20px!important;
 }
 [onclick]{cursor:pointer;}
+.printonly{display:none!important;}
 
 #header{overflow: hidden;}
 #links{clear:both;}
