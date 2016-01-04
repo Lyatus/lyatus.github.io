@@ -24,6 +24,7 @@ var projects = {
 			'French Windows installer':'http://file.luciencatonnet.com/Apoptosis_setup_fr.exe',
 			'itch.io':'http://lutopia.itch.io/apoptosis',
 			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
+			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
 			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous/.html'
 		},
 		'start':'Mar. 2015',
