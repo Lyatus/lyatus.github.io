@@ -25,7 +25,8 @@ var projects = {
 			'itch.io':'http://lutopia.itch.io/apoptosis',
 			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
 			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
-			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous/.html'
+			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous/.html',
+			'FreeGamePlanet article':'https://www.freegameplanet.com/apoptosis-full-game-download/'
 		},
 		'start':'Mar. 2015',
 		'end':'Jun. 2015'
