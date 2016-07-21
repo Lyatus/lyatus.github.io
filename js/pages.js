@@ -13,8 +13,8 @@ var pages = {
 				"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm a 22 year-old video game programming student at ENJMIN. I'm currently looking for an internship as a programmer in a video game studio. Ultimately I want to become a game engine programmer.</p>"
 				+"<h2>Skills</h2><p>"
 				+"<b>Languages</b>: C/C++, Lua, x86, C#, Java, PHP, JavaScript, GLSL"
-				+"<br/><b>Software</b>: Unreal Engine 4, Visual Studio, Code::Blocks, Unity, Git, Perforce"
-				+"<br/><b>Libraries</b>: OpenGL, Wwise, FreeType"
+				+"<br/><b>Software</b>: Unreal Engine 4, Visual Studio, Code::Blocks, Unity, Git, Perforce, Premake"
+				+"<br/><b>Libraries</b>: OpenGL 3.3, Wwise, FreeType"
 				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 				+"</p>"
 				+"<h2>Projects</h2>"+tmp+'<div style="clear:both;"></div>'
