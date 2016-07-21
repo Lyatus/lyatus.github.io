@@ -18,6 +18,10 @@ var pages = {
 				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 				+"</p>"
 				+"<h2>Projects</h2>"+tmp+'<div style="clear:both;"></div>'
+				+"<h2>Experiences</h2><p>"
+				+"<b>Ubisoft Mobile</b>: engine programmer assistant (April 2016 - September 2016)"
+				+"<br/><b>MER7</b>: web internship (August 2012)"
+				+"</p>"
 				+"<h2>Studies</h2><p>"
 				+"<b>Ecole Nationale du Jeu et des Médias Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
 				+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
