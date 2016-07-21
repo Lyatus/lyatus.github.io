@@ -3,5 +3,4 @@
 	transition: 128ms;
 }
 #logo:hover .bottom{width: 32px;}
-#logo:hover .center{height: 96px;}
-#logo:active .center{height: 128px;}
+#logo:hover .center{y:32px;}
