@@ -59,7 +59,6 @@ var projects = {
 			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
 			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
 		'media':[{'img':'project/antitris/ingame.png'}],
-		'links':{'Download for Windows':'http://file.luciencatonnet.com/Antitris.zip'},
 		'start':'Jun. 2014',
 		'end':'Jun. 2014',
 	},
