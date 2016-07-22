@@ -21,8 +21,6 @@ var projects = {
 		'media':[{'yt':'tMwTOBmPpXQ'},{'img':'project/apoptosis/3.png'},{'img':'project/apoptosis/1.png'},{'img':'project/apoptosis/2.png'}],
 		'team':['François Rizzo','Marjolaine Paz','Gaspard Morel'],
 		'links':{
-			'English Windows installer':'http://file.luciencatonnet.com/Apoptosis_setup_en.exe',
-			'French Windows installer':'http://file.luciencatonnet.com/Apoptosis_setup_fr.exe',
 			'itch.io':'http://lutopia.itch.io/apoptosis',
 			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
 			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
