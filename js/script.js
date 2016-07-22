@@ -47,7 +47,7 @@ function loadPage(key){
 		if(page.content)
 			tmp += page.content;
 		if(page.team){
-			tmp += '<h2>Team</h2><p>';
+			tmp += '<h2>Teammates</h2><p>';
 			for(var m in page.team){
 				var name = page.team[m];
 				var member = people[name];
