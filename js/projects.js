@@ -8,7 +8,8 @@ var projects = {
 			+"<h2>Patrols</h2><p>I'm also working on a patrol system, meaning a squad of characters supposed to be looking for the main character. Each member of the squad is able to determine if they can see the target and remembers their latest position and rotation. Because of this, a squad can determine if a certain point in space has been recently seen by one of the members of the squad. This mechanism is how squad members rule out search options and tend to go look at \"non-recently-seen\" locations. The current prototype works with good performance and easily finds most players.</p>",
 		'media':[{'yt':'UciJAgPx7to'},{'img':'project/wesavages/flocking.gif'},{'img':'project/wesavages/patrol.gif'},{'img':'project/wesavages/screen0.png'}],
 		'team':['François Rizzo','Anthony Krafft','Axel Deshors','Cyril Malvaux','Romain Ferrand','Baptiste Poligné','Pierre-Yves Revellin','Marc-Antoine Archier','Victor Gibaud'],
-		'start':'Oct. 2015'
+		'start':'Oct. 2015',
+		'end':'Mar. 2016',
 	},
 	'apoptosis':{
 		'thumbnail':'project/apoptosis/thumbnail.png',
