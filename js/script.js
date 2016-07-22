@@ -71,13 +71,9 @@ function loadPage(key){
 		}
 		pages[key] = tmp;
 	}
-	main.style.opacity = 0;
-	setTimeout(function(){
-		main.innerHTML = pages[key];
-		main.style.opacity = 1;
-		location = "#"+key;
-		ga('send','pageview',location.pathname+location.hash);
-	},64);
+	main.innerHTML = pages[key];
+	location = "#"+key;
+	ga('send','pageview',location.pathname+location.hash);
 }
 
 // History
