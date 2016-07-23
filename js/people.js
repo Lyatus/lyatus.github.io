@@ -17,6 +17,7 @@ var people = {
 		'role':'Game designer',
 		'links':{
 			'Web':'http://francoisrizzo.com/',
+			'Twitter':'https://twitter.com/Cuv_8',
 			'LinkedIn':'https://fr.linkedin.com/in/fran%C3%A7ois-rizzo-333486b2'
 		}
 	},
