@@ -50,6 +50,7 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 #main p{padding: 8px;}
 
 .background{background-color: #efefef;}
+.clickable{cursor:pointer;}
 
 /* Project blocks */
 .block{position: relative;}

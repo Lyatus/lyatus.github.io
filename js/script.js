@@ -7,6 +7,13 @@ function link(name,url){
 function capitalize(str){
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
+function imgload(e){
+	var img = e.srcElement;
+	if(img.width<img.naturalWidth){
+		img.classList.add('clickable');
+		img.onclick = function(e){window.open(e.srcElement.src,"_blank")};
+	}
+}
 function start(){
 	main = document.getElementById('main');
 	var linksElement = document.getElementById('links');
@@ -39,7 +46,7 @@ function loadPage(key){
 			tmp += '<div id="media">';
 			for(var m in page.media)
 				if(page.media[m].img)
-					tmp += '<img src="'+page.media[m].img+'"/>';
+					tmp += '<img onload="imgload(event)" src="'+page.media[m].img+'"/>';
 				else if(page.media[m].yt)
 					tmp += '<iframe width="420" height="236" src="https://www.youtube.com/embed/'+page.media[m].yt+'" frameborder="0" allowfullscreen></iframe>';
 			tmp += '</div>';
