@@ -33,7 +33,6 @@ indent{
 	margin-left: 20px;
 }
 [onclick]{cursor:pointer;}
-.printonly{display:none!important;}
 
 #header{overflow: hidden;}
 #links{clear:both;}
@@ -139,3 +138,11 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 #media>*{max-width: 420px;display:block;}
 #media>*:not(:first-child){margin-top: 8px;} /* Vertical space inbetween media */
 #page_links{margin-top: 28px;} /* Separate links from page body */
+
+@media print {
+	.screenonly{display:none!important;}
+}
+
+@media not print {
+	.printonly{display:none!important;}
+}
