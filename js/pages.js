@@ -1,12 +1,24 @@
 var pages = {
 	'home':function(){
-		var tmp = '';
+		var prjs = '';
+		prjs += '<p class="printonly">';
 		for(var key in projects){
-			tmp += '<a class="block background" onclick="loadPage(\''+key+'\')">'
-			tmp += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
-			tmp += '<span>'+getProjectTitle(key)+'</span>'
-			if(getProjectPeriod(key)) tmp += '<span class="bottom">'+getProjectPeriod(key)+'</span>'
-			tmp += '</a>';
+			if(projects[key].short){
+				prjs += "<b>"+getProjectTitle(key)+"</b>";
+				if(getProjectPeriod(key)) prjs += ' ('+getProjectPeriod(key)+')';
+				prjs += ":<indent>";
+				for(var i in projects[key].short)
+					prjs += "- "+projects[key].short[i]+"<br/>";
+				prjs += "</indent>";
+			}
+		}
+		prjs += '</p>';
+		for(var key in projects){
+			prjs += '<a class="block background screenonly" onclick="loadPage(\''+key+'\')">'
+			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
+			prjs += '<span>'+getProjectTitle(key)+'</span>'
+			if(getProjectPeriod(key)) prjs += '<span class="bottom">'+getProjectPeriod(key)+'</span>'
+			prjs += '</a>';
 		}
 		var wtr = {
 			'content':
@@ -17,7 +29,7 @@ var pages = {
 				+"<br/><b>Libraries</b>: OpenGL 3.3, Wwise, FreeType"
 				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 				+"</p>"
-				+"<h2>Projects</h2>"+tmp+'<div style="clear:both;"></div>'
+				+"<h2>Projects</h2>"+prjs+'<div style="clear:both;"></div>'
 				+"<h2>Experiences</h2><p>"
 				+"<b>Ubisoft Mobile</b>: engine programmer assistant (April 2016 - September 2016)"
 				+"<indent>- Put in place and cleaned precompiled headers for several projects of an in-house engine"
