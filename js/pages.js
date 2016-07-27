@@ -20,7 +20,12 @@ var pages = {
 				+"<h2>Projects</h2>"+tmp+'<div style="clear:both;"></div>'
 				+"<h2>Experiences</h2><p>"
 				+"<b>Ubisoft Mobile</b>: engine programmer assistant (April 2016 - September 2016)"
+				+"<indent>- Put in place and cleaned precompiled headers for several projects of an in-house engine"
+				+"<br/>- Created a build system solution that could satisfy our many projects dependency needs"
+				+"<br/>- Debugged iOS games with the support team</indent>"
 				+"<br/><b>MER7</b>: web internship (August 2012)"
+				+"<indent>- Refactored a service selling website"
+				+"<br/>- Played a lot of Tekken Tag Tournament 2</indent>"
 				+"</p>"
 				+"<h2>Studies</h2><p>"
 				+"<b>Ecole Nationale du Jeu et des Médias Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"

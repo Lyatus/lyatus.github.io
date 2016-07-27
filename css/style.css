@@ -28,6 +28,10 @@ h2 + p {
     margin-top: -20px!important;
     padding-top: 20px!important;
 }
+indent{
+	display: block;
+	margin-left: 20px;
+}
 [onclick]{cursor:pointer;}
 .printonly{display:none!important;}
 
