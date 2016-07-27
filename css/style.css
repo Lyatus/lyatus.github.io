@@ -110,7 +110,6 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 
 /* Main */
 #main{
-	margin-bottom: 128px;
 	width: 864px;
 	clear: both;
 	transition: 64ms;
@@ -145,4 +144,5 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 
 @media not print {
 	.printonly{display:none!important;}
+	main {margin-bottom: 128px!important;}
 }
