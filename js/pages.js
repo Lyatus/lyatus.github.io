@@ -23,7 +23,7 @@ var pages = {
 				+"<indent>- Put in place and cleaned precompiled headers for several projects of an in-house engine"
 				+"<br/>- Created a build system solution that could satisfy our many projects dependency needs"
 				+"<br/>- Debugged iOS games with the support team</indent>"
-				+"<br/><b>MER7</b>: web internship (August 2012)"
+				+"<b>MER7</b>: web internship (August 2012)"
 				+"<indent>- Refactored a service selling website"
 				+"<br/>- Played a lot of Tekken Tag Tournament 2</indent>"
 				+"</p>"
