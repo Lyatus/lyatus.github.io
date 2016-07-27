@@ -1,5 +1,5 @@
 .printonly{display:initial!important;}
-#links{display: none;}
+.screenonly{display: none;}
 .block span{
 	color: black;
 	background-color: #efefef;
