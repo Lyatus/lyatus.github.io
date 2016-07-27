@@ -32,7 +32,7 @@ var pages = {
 				+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
 				+"<br/><b>Lycée Robert de Luzarches</b>: Baccalauréat L (literature), Audiovisual specialization (2011)"
 				+"</p>"
-				+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming</p>",
+				+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming / Woodworking</p>",
 			'media':[{'img':'img/photo.jpg'}]
 		};
 		return wtr;
