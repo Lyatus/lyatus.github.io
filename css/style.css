@@ -140,6 +140,7 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 
 @media print {
 	.screenonly{display:none!important;}
+	#main p{font-size: 15px;}
 }
 
 @media not print {
