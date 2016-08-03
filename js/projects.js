@@ -17,31 +17,6 @@ var projects = {
 			+"<h2>Sources</h2><p>I intend to make the sources available at some point but there are still some embarassing pieces of code that need to be rewritten before that.</p>",
 		'start':'2011'
 	},
-	'apoptosis':{
-		'thumbnail':'project/apoptosis/thumbnail.png',
-		'short':[
-			"Game made with my own C++ engine for school",
-			"Marching cubes voxels with OpenGL VBOs (and voxelisation from triangle models)",
-			"3D cellular automata to simulate organic life",
-			"Space colonization algorithm to simulate blood vessels",
-		],
-		'content':
-		"<h2>Presentation</h2><p>Apoptosis is a short narrative experience that explores the effect of a grave illness on the relationship between two people. Sickness does not only affect the sick and we wanted to explore the feelings of someone close to the diseased, and especially the unspeakable ones in those situations.</p>"
-		+"<h2>Intentions</h2><p>The player's objective is to expand the illness on an organ. We chose this particular position because we wanted to create a feeling of uneasiness in order to attain empathy for the characters. The narration progresses as the disease expands and thus the player feels trapped between wanting to know what comes next and witnessing the effect of his actions.</p>"
-		+"<h2>Design</h2><p>We chose to have one of the most simple interaction possible (a mouse click) to emphasize this \"uneasiness\". The question the game asks to the player is whether he wants to continue or not, without proposing any alternative solution. Even though the expansion of the disease can be graphically pleasant to watch, the interaction has to be practically uninteresting in order to have meaning. It had to be the opposite of fun.</p>"
-		+"<h2>Technology</h2><p>The game uses my own C++ engine, which I had to interface with Wwise as requested by the sound designer. It uses voxels (marching cubes) and cellular automata to attain this special organic feel we wanted for the disease. I did try to implement marching cubes in Unity first but it wasn't fast enough to support per-frame automaton updating. I implemented many things in the engine to support developing this game, including template multidimensional trees for fast space queries, a camera class (and the matrix tools that go with it) and a pool allocator for memory efficiency.</p>",
-		'media':[{'yt':'tMwTOBmPpXQ'},{'img':'project/apoptosis/3.png'},{'img':'project/apoptosis/1.png'},{'img':'project/apoptosis/2.png'}],
-		'team':['François Rizzo','Marjolaine Paz','Gaspard Morel'],
-		'links':{
-			'itch.io':'http://lutopia.itch.io/apoptosis',
-			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
-			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
-			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous',
-			'FreeGamePlanet article':'https://www.freegameplanet.com/apoptosis-full-game-download/'
-		},
-		'start':'Mar. 2015',
-		'end':'Jun. 2015'
-	},
 	'noidd':{
 		'thumbnail':'project/noidd/thumbnail.png',
 		'short':[
@@ -77,14 +52,30 @@ var projects = {
 		'start':'Oct. 2015',
 		'end':'Mar. 2016',
 	},
-	'antitris':{
-		'thumbnail':'project/antitris/thumbnail.png',
+	'apoptosis':{
+		'thumbnail':'project/apoptosis/thumbnail.png',
+		'short':[
+			"Game made with my own C++ engine for school",
+			"Marching cubes voxels with OpenGL VBOs (and voxelisation from triangle models)",
+			"3D cellular automata to simulate organic life",
+			"Space colonization algorithm to simulate blood vessels",
+		],
 		'content':
-			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
-			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
-		'media':[{'img':'project/antitris/ingame.png'}],
-		'start':'Jun. 2014',
-		'end':'Jun. 2014',
+		"<h2>Presentation</h2><p>Apoptosis is a short narrative experience that explores the effect of a grave illness on the relationship between two people. Sickness does not only affect the sick and we wanted to explore the feelings of someone close to the diseased, and especially the unspeakable ones in those situations.</p>"
+		+"<h2>Intentions</h2><p>The player's objective is to expand the illness on an organ. We chose this particular position because we wanted to create a feeling of uneasiness in order to attain empathy for the characters. The narration progresses as the disease expands and thus the player feels trapped between wanting to know what comes next and witnessing the effect of his actions.</p>"
+		+"<h2>Design</h2><p>We chose to have one of the most simple interaction possible (a mouse click) to emphasize this \"uneasiness\". The question the game asks to the player is whether he wants to continue or not, without proposing any alternative solution. Even though the expansion of the disease can be graphically pleasant to watch, the interaction has to be practically uninteresting in order to have meaning. It had to be the opposite of fun.</p>"
+		+"<h2>Technology</h2><p>The game uses my own C++ engine, which I had to interface with Wwise as requested by the sound designer. It uses voxels (marching cubes) and cellular automata to attain this special organic feel we wanted for the disease. I did try to implement marching cubes in Unity first but it wasn't fast enough to support per-frame automaton updating. I implemented many things in the engine to support developing this game, including template multidimensional trees for fast space queries, a camera class (and the matrix tools that go with it) and a pool allocator for memory efficiency.</p>",
+		'media':[{'yt':'tMwTOBmPpXQ'},{'img':'project/apoptosis/3.png'},{'img':'project/apoptosis/1.png'},{'img':'project/apoptosis/2.png'}],
+		'team':['François Rizzo','Marjolaine Paz','Gaspard Morel'],
+		'links':{
+			'itch.io':'http://lutopia.itch.io/apoptosis',
+			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
+			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
+			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous',
+			'FreeGamePlanet article':'https://www.freegameplanet.com/apoptosis-full-game-download/'
+		},
+		'start':'Mar. 2015',
+		'end':'Jun. 2015'
 	},
 	'praytracer':{
 		'thumbnail':'project/praytracer/thumbnail.png',
@@ -96,6 +87,15 @@ var projects = {
 		'links':{'GitHub repository':'https://github.com/Lyatus/praytracer'},
 		'start':'Apr. 2015',
 		'end':'Apr. 2015',
+	},
+	'antitris':{
+		'thumbnail':'project/antitris/thumbnail.png',
+		'content':
+			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
+			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
+		'media':[{'img':'project/antitris/ingame.png'}],
+		'start':'Jun. 2014',
+		'end':'Jun. 2014',
 	},
 };
 
