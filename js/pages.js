@@ -40,7 +40,7 @@ var pages = {
 				+"<br/>- Played a lot of Tekken Tag Tournament 2</indent>"
 				+"</p>"
 				+"<h2>Studies</h2><p>"
-				+"<b>Ecole Nationale du Jeu et des Médias Interactifs Numériques</b>: Master's Degree in video game programming (2014 - 2016)"
+				+"<b>ENJMIN</b>: Master's Degree in video game programming (2014 - 2016)"
 				+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
 				+"<br/><b>Lycée Robert de Luzarches</b>: Baccalauréat L (literature), Audiovisual specialization (2011)"
 				+"</p>"
