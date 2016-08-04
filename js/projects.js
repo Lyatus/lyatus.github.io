@@ -86,8 +86,7 @@ var projects = {
 			+"<h2>Parallelism</h2><p>Seeing as the performance in a single thread wasn't enough to have even indecent scenes running at a decent framerate, I took a multithreaded approach to the problem. All threads have a PImage that they render to, at the end of the frame we blit all PImages to the screen. Synchronization is simply done with a semaphore. At first the PImages were fullscreen and threads drew lines in a strided fashion. Some artifacts appeared (random white dots across the screen) but the performance was obviously better than the single-threaded version. I've then changed it to have smaller PImages (the height of the screen divided by the number of threads) and blitted accordingly, it did not seem to improve performance and the artifacts were still there. Sadly Processing does not come with a profiler so I don't really know where to concentrate my efforts to improve performance (I think there's a Java one but I can't be bothered to hook it up with a Processing sketch).</p>",
 		'media':[{'img':'project/praytracer/1.png'}],
 		'links':{'GitHub repository':'https://github.com/Lyatus/praytracer'},
-		'start':'Apr. 2015',
-		'end':'Apr. 2015',
+		'date':'Apr. 2015',
 	},
 	'antitris':{
 		'thumbnail':'project/antitris/thumbnail.png',
@@ -95,8 +94,7 @@ var projects = {
 			"<h2>Presentation</h2><p>Antitris is a puzzle game inspired by Tetris in which you have to place horizontal bars of different colors in order to recreate tetrominos of the same color in the game's grid. It's a pretty small project that I developed on my own not long before entering ENJMIN.</p>"
 			+"<h2>Technology</h2><p>The game was entirely made in C++, using an old version of my own engine.</p>",
 		'media':[{'img':'project/antitris/ingame.png'}],
-		'start':'Jun. 2014',
-		'end':'Jun. 2014',
+		'date':'Jun. 2014',
 	},
 };
 
@@ -108,11 +106,11 @@ function getProjectTitle(key){
 }
 function getProjectPeriod(key){
 	if(projects[key].start){
-		if(projects[key].end){
-			if(projects[key].start==projects[key].end) return projects[key].start;
-			else return projects[key].start+' to '+projects[key].end;
-		}
-		else return projects[key].start+' to now';
+		if(projects[key].end)
+			return projects[key].start+' to '+projects[key].end;
+		else return 'since '+projects[key].start;
 	}
+	else if(projects[key].date)
+		return projects[key].date;
 	return false;
 }
