@@ -123,7 +123,6 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 	line-height: 1.3em;
 	font-size: 16px;
 }
-#main p a:hover{text-decoration: underline;}
 #main p a{font-weight: bold;}
 #main .link{
 	margin-right: 4px;
