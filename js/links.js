@@ -1,6 +1,6 @@
 var links = {
 	'Facebook':'https://www.facebook.com/luciencatonnet',
-	'Rotonde':'dat://ace9673d769765921cb7d047af715332933c878c107d2cde900e39c2736e815c',
+	'Rotonde':'dat://lutopia.hashbase.io/',
 	'Twitter':'https://twitter.com/LucienCatonnet',
 	'LinkedIn':'https://www.linkedin.com/in/luciencatonnet',
 	'GitHub':'https://github.com/Lyatus',
