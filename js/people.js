@@ -13,6 +13,13 @@ var people = {
 			'LinkedIn':'https://fr.linkedin.com/in/bencalmejane'
 		}
 	},
+	'Mayk Navangi':{
+		'role':'Graphic designer',
+		'links':{
+			'Tumblr':'https://gyllsmayk.tumblr.com/',
+			'LinkedIn':'https://www.linkedin.com/in/mayk-navangi-60a295b2'
+		}
+	},
 	'François Rizzo':{
 		'role':'Game designer',
 		'links':{

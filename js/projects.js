@@ -32,7 +32,7 @@ var projects = {
 		+"<h2>History</h2><p>I've been working on this project from the very start as the sole programmer with the help of 4 graphic designers including my brother. We started this project in 2010, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
 		+"<h2>Technology</h2><p>Noidd does not make use of any framework. It uses APIs such as YouTube and SoundClound and relies heavily on XmlHttpRequest and WebSocket technologies for synchronization.</p>",
 		'media':[{'img':'project/noidd/screenshot.png'}],
-		'team':['Léo Catonnet','Benjamin Calméjane'],
+		'team':['Léo Catonnet','Benjamin Calméjane','Mayk Navangi'],
 		'links':{'Website':'http://noidd.com'},
 		'start':'2010'
 	},
