@@ -14,7 +14,7 @@ var pages = {
 		}
 		prjs += '</p>';
 		for(var key in projects){
-			prjs += '<a class="block background screenonly" onclick="loadPage(\''+key+'\')">'
+			prjs += '<a class="block project background screenonly" onclick="loadPage(\''+key+'\')">'
 			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
 			prjs += '<span>'+getProjectTitle(key)+'</span>'
 			if(getProjectPeriod(key)) prjs += '<span class="bottom">'+getProjectPeriod(key)+'</span>'

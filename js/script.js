@@ -36,11 +36,12 @@ function loadPage(key){
 	if(typeof pages[key] != 'string'){
 		var page = pages[key];
 		var tmp = '';
-		if(page.thumbnail) tmp += '<img class="thumbnail single" src="'+page.thumbnail+'"/>';
-		if(page.title){
-			tmp += '<h1 class="title background">'+page.title;
-			if(page.subtitle) tmp += '<span>'+page.subtitle+'</span>';
-			tmp += '</h1>';
+		if(page.title) {
+			tmp += '<div class="block background title">'
+			if(page.thumbnail) tmp += '<img class="thumbnail" src="'+page.thumbnail+'"/>';
+			tmp += '<span>'+page.title+'</span>';
+			if(page.subtitle) tmp += '<span class="bottom">'+page.subtitle+'</span>';
+			tmp += '</div>';
 		}
 		if(page.media){
 			tmp += '<div id="media">';

@@ -8,21 +8,24 @@ html, body{
 	height: 100%;
 	width: 100%;
 }
-body{
-	width: 864px;
-	margin: 0 auto;
-}
 a{
 	color: black;
 	text-decoration: none;
 }
-h1, h2, h3{
+h1, h2, h3 {
 	font-family: 'Poiret One', sans-Serif;
 	font-weight: normal;
 	vertical-align: top;
 }
-h1{font-size: 64px;}
-h2{font-size: 32px;margin-left:32px!important;}
+h1 {
+	font-size: 64px;
+}
+h2 {
+	font-size: 32px;
+	margin-left: 32px!important;
+	overflow: hidden;
+	clear: left;
+}
 h2 + p {
     background-color: #efefef;
     margin-top: -20px!important;
@@ -36,18 +39,12 @@ indent{
 
 #header{overflow: hidden;}
 #links{clear:both;}
-#logo, #header, #pages, #main, .block{float: left;}
-#logo, #header, #pages, .block{
-	display: block;
-	width: 128px;
-	height: 128px;
-}
 
 /* Margin and padding */
-h1, h2, h3, #logo, #header, #pages, .link, #header span, .block, .thumbnail.single{
+h1, h2, h3, #logo, #header, .block, .link, #header span{
 	padding: 4px;
 }
-h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbnail.single{
+h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	margin: 4px;
 }
 #main p{padding: 8px;}
@@ -56,21 +53,14 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 .clickable{cursor:pointer;}
 
 /* Project blocks */
-.block{position: relative;}
-.block:hover{
-	margin: 2px;
-	border: 2px #ccc solid;
-}
-.block img{
+.block {
 	display: block;
-	position: absolute;
+	position: relative;
 }
-.block span{
+.block span {
 	position: absolute;
 	top: 4px;
 	padding: 4px;
-	color: white;
-	text-shadow: 0px 0px 4px black;
 }
 .block span.bottom {
     position: absolute;
@@ -81,28 +71,20 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
     top: initial;
 }
 
-.title{height: 128px;}
-.thumbnail{
-	height: 128px;
-	width: 128px;
+.block.title {
+	font-family: 'Poiret One', sans-Serif;
+	font-weight: normal;
 }
-.thumbnail.single{
-	display: inline-block;
+.title .thumbnail{
 	float: left;
 	margin-right: 12px;
 }
 .link{
 	display: inline-block;
 	background-color: #efefef;
-	transition: background-color 128ms;
 }
-.link:hover{background-color: #aaa;}
-
-/* Pages */
-#pages a{width: 120px;}
 
 /* Header */
-#header{width: 704px;}
 #header span{
 	display: inline-block;
 	float: left;
@@ -110,14 +92,7 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 
 /* Main */
 #main{
-	width: 864px;
 	clear: both;
-	transition: 64ms;
-}
-#main h1{line-height: 120px;}
-#main h1 span{
-	font-size: 24px;
-    float: right;
 }
 #main p{
 	line-height: 1.3em;
@@ -144,7 +119,102 @@ h1, h1 span, h2, h3, #logo, #header, #pages, .block, #main p, #media>*, .thumbna
 	#main p{font-size: 15px;}
 }
 
-@media not print {
+@media screen {
 	.printonly{display:none!important;}
-	main {margin-bottom: 128px!important;}
+	main {margin-bottom: 32px!important;}
+}
+
+/* Desktop (animation) */
+@media screen and (min-width: 865px) {
+	#logo .bottom, #logo .left, #logo .center{
+		-webkit-transition: 128ms;
+		transition: 128ms;
+	}
+	#logo:hover .bottom{width: 32px;}
+	#logo:hover .center{y:32px;}
+
+	.link {
+		-webkit-transition: background-color 128ms;
+		transition: background-color 128ms;		
+	}
+	.link:hover {background-color: #aaa;}
+
+	.block.project:hover {
+		margin: 2px;
+		border: 2px #ccc solid;
+	}
+}
+/* Desktop or print */
+@media screen and (min-width: 865px), print {
+	body {
+		width: 864px;
+		margin: 0 auto;
+	}
+	main {
+		width: 864px;		
+	}
+	#header {
+		width: 704px;
+	}
+	#logo, #header, #main, .block.block.project {
+		float: left;
+	}
+	#logo, .block.project{
+		width: 128px;
+		height: 128px;
+	}
+	.block.title {
+		height: 128px;
+	}
+	.block.title span {
+		font-size: 64px;
+	}
+	.block.title span.bottom {
+		font-size: 24px;
+	}
+	.block.project span {
+		color: white;
+		text-shadow: 0px 0px 4px black;
+	}
+	.block.project img {
+		display: block;
+		position: absolute;
+	}
+	.thumbnail {
+		height: 128px;
+		width: 128px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 864px) {
+	#logo {
+		width: 32px;
+    position: absolute;
+    top: 8px;
+	}
+	#media {
+		max-width: 33%;
+		padding-right: 8px;
+	}
+	#media>* {
+		max-width: 100%;
+	}
+	.block {
+		height: 64px;
+	}
+	.block.title span {
+		font-size: 32px;
+	}
+	.block.title span.bottom {
+		font-size: 16px;
+	}
+	.thumbnail {
+		height: 64px;
+		width: 64px;
+	}
+	h1 {
+		margin-left: 32px;
+		font-size: 32px;
+	}
 }
