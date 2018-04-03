@@ -86,7 +86,6 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 
 /* Header */
 #header span{
-	display: inline-block;
 	float: left;
 }
 
