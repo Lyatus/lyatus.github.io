@@ -31,6 +31,9 @@ var pages = {
 				+"</p>"
 				+"<h2>Projects</h2>"+prjs+'<div style="clear:both;"></div>'
 				+"<h2>Experiences</h2><p>"
+				+"<b>DontNod Entertainment</b>: engine programmer (October 2016 - now)"
+				+"<indent>- Profiled and debugged on PS4 and XB1"
+				+"<br/>- Shipped Vampyr (PC/PS4/XB1)</indent>"
 				+"<b>Ubisoft Mobile</b>: engine programmer assistant (April 2016 - September 2016)"
 				+"<indent>- Put in place and cleaned precompiled headers for several projects of an in-house engine"
 				+"<br/>- Created a build system solution that could satisfy our many projects dependency needs"
