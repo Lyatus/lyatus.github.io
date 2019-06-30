@@ -37,7 +37,7 @@ var people = {
 	'Marjolaine Paz':{
 		'role':'Graphic designer',
 		'links':{
-			'Web':'http://cargocollective.com/MarjolainePaz',
+			'Web':'https://marjolainepaz.com',
 			'Twitter':'https://twitter.com/Linheha',
 			'LinkedIn':'https://fr.linkedin.com/in/marjolaine-paz-28b1a1b9'
 		}
