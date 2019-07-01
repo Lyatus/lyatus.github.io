@@ -179,7 +179,7 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	}
 	.block.project span {
 		color: white;
-		text-shadow: 0px 0px 4px black;
+		background-color: #00000099;
 	}
 	.block.project img {
 		display: block;
