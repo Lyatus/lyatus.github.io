@@ -19,6 +19,33 @@ var projects = {
 			'links':{'Documentation':'L','Repository':'https://github.com/Lyatus/L'},
 			'start':'2011'
 	},
+	raccoon: {
+		thumbnail:'project/raccoon/thumbnail.png',
+		content:
+			"<h2>Presentation</h2><p>Raccoon is a web fantasy console. It's inspired by <a href=\"https://www.lexaloffle.com/pico-8.php\" target=\"_blank\">PICO-8</a> but aims at offering better tools (not made within the constraints of the fantasy console). This is why for this project I work with a UX designer to try and get people to make games the easiest way possible. Raccoon wants to bring together game creation with constraints and great tools.</p>"
+			+"<h2>Console features</h2><p>"
+				+"- 20KiB of ROM to put your game assets<br/>"
+				+"  - 192 8x8 sprites<br/>"
+				+"  - 128x64 map tiles<br/>"
+				+"- 32KiB of RAM to communicate with the virtual machine<br/>"
+				+"- 128x128 pixel screen<br/>"
+				+"- 8 user-defined colors + 8 derived colors for a total of 16 colors per pixel<br/>"
+				+"- Palette modification and transparency<br/>"
+				+"- 4 audio channels<br/>"
+				+"- 4 gamepads with 4 directions and 4 buttons each<br/>"
+			+"</p>"
+			+"<h2>Editor features</h2><p>"
+			+"- Hot reload anything! Work on your sprites, map or code, while you play!<br/>"
+			+"- Built-in documentation window, keep an eye on documentation as you make your game!<br/>"
+			+"- Support for GitHub synchronization, work on a game with your friends!<br/>"
+			+"</p>"
+			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>"
+		,
+		media:[{'img':'project/raccoon/bloodfighters.gif'}],
+		links: {Website: 'https://raccoon.lucien.cat', Repository: 'https://github.com/Lyatus/raccoon'},
+		team: ['Marjolaine Paz'],
+		start: '2019',
+	},
 	'noidd':{
 		'thumbnail':'project/noidd/thumbnail.png',
 		'short':[
