@@ -17,7 +17,6 @@ var pages = {
 			prjs += '<a class="block project background screenonly" onclick="loadPage(\''+key+'\')">'
 			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
 			prjs += '<span>'+getProjectTitle(key)+'</span>'
-			if(getProjectPeriod(key)) prjs += '<span class="bottom">'+getProjectPeriod(key)+'</span>'
 			prjs += '</a>';
 		}
 		var wtr = {
