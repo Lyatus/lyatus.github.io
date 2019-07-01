@@ -1,5 +1,5 @@
 var pages = {
-	'home':function(){
+	home: function(){
 		var prjs = '';
 		prjs += '<p class="printonly">';
 		for(var key in projects){
@@ -26,7 +26,7 @@ var pages = {
 				+"<h2>Skills</h2><p>"
 				+"<b>Languages</b>: C/C++, Lua, x86, C#, Java, PHP, JavaScript, GLSL"
 				+"<br/><b>Software</b>: Unreal Engine 4, Visual Studio, Unity, Git, Perforce, Premake"
-				+"<br/><b>Libraries</b>: OpenGL 3.3, Wwise, FreeType"
+				+"<br/><b>APIs</b>: OpenGL 3.3, Vulkan, Wwise"
 				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 				+"</p>"
 				+"<h2>Projects</h2>"+prjs+'<div style="clear:both;"></div>'
