@@ -96,8 +96,9 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	clear: both;
 }
 #main p{
-	line-height: 1.3em;
+	line-height: 1.4em;
 	font-size: 16px;
+	text-align: justify;
 }
 #main p a{font-weight: bold;}
 #main .link{
