@@ -41,7 +41,7 @@ var projects = {
 			+"</p>"
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>"
 		,
-		media:[{'img':'project/raccoon/bloodfighters.gif'}],
+		media:[{'img':'project/raccoon/bloodfighters.gif'}, {'img':'project/raccoon/architect.gif'}],
 		links: {Website: 'https://raccoon.lucien.cat', Repository: 'https://github.com/Lyatus/raccoon'},
 		team: [
 			{name:'Marjolaine Paz', role: 'UI/UX designer'},
