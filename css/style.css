@@ -112,7 +112,7 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	padding-bottom: 4px;
 	background-color: white; /* Avoid other backgrounds under media */
 }
-#media>*{max-width: 420px;display:block;}
+#media>*{max-width: 300px;display:block;}
 #media>*:not(:first-child){margin-top: 8px;} /* Vertical space inbetween media */
 #page_links{margin-top: 28px;} /* Separate links from page body */
 
