@@ -1,4 +1,3 @@
-let main = null;
 let currentPage = "none";
 
 function link(name, url) {
@@ -15,7 +14,6 @@ function imgload(e) {
 	}
 }
 window.addEventListener('load', function() {
-	main = document.getElementById('main');
 	load_page(hash() || 'home');
 });
 window.addEventListener('hashchange', function() {
@@ -73,7 +71,7 @@ function load_page(key) {
 		}
 		pages[key] = tmp;
 	}
-	main.innerHTML = pages[key];
+	document.getElementById('main').innerHTML = pages[key];
 	window.scrollTo(0,0);
 }
 
