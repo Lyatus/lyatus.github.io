@@ -1,5 +1,3 @@
-let currentPage = "none";
-
 function link(name, url) {
 	return '<a class="link" href="'+url+'" target="_blank">'+name+'</a>';
 }
@@ -22,8 +20,6 @@ window.addEventListener('hashchange', function() {
 
 /* Page */
 function load_page(key) {
-	if(currentPage==key) return;
-	else currentPage = key;
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
 	if(typeof pages[key] != 'string') {
 		let page = pages[key];
