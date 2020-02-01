@@ -79,7 +79,6 @@ function load_page(key) {
 	}
 	main.innerHTML = pages[key];
 	window.scrollTo(0,0);
-	location = "#"+key;
 }
 
 // History
