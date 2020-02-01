@@ -1,26 +1,27 @@
 const pages = {
-	home: function(){
-		var prjs = '';
+	home: function() {
+		let prjs = '';
 		prjs += '<p class="printonly">';
-		for(var key in projects){
-			if(projects[key].short){
+		for(let key in projects) {
+			if(projects[key].short) {
 				prjs += "<b>"+getProjectTitle(key)+"</b>";
 				if(getProjectPeriod(key)) prjs += ' ('+getProjectPeriod(key)+')';
 				prjs += ":<indent>";
-				for(var i in projects[key].short)
+				for(let i in projects[key].short) {
 					prjs += "- "+projects[key].short[i]+"<br/>";
+				}
 				prjs += "</indent>";
 			}
 		}
 		prjs += '</p>';
-		for(var key in projects){
-			prjs += '<a class="block project background screenonly" onclick="loadPage(\''+key+'\')">'
+		for(let key in projects) {
+			prjs += '<a class="block project background screenonly" href="#'+key+'">'
 			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
 			prjs += '<span>'+getProjectTitle(key)+'</span>'
 			prjs += '</a>';
 		}
-		var wtr = {
-			'content':
+		return {
+			content:
 				"<h2>Presentation</h2><p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>"
 				+"<h2>Skills</h2><p>"
 				+"<b>Languages</b>: C/C++, Lua, x86, C#, Java, PHP, JavaScript, GLSL"
@@ -44,8 +45,7 @@ const pages = {
 				+"<br/><b>Lycée Robert de Luzarches</b>: Baccalauréat L (literature), Audiovisual specialization (2011)"
 				+"</p>"
 				+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming / Woodworking</p>",
-			'media':[{'img':'img/photo.jpg'}]
+			media:[{'img':'img/photo.jpg'}]
 		};
-		return wtr;
 	}
 };
