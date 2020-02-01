@@ -1,5 +1,5 @@
 const pages = {
-	'home':function(){
+	home: function(){
 		var prjs = '';
 		prjs += '<p class="printonly">';
 		for(var key in projects){
@@ -17,16 +17,15 @@ const pages = {
 			prjs += '<a class="block project background screenonly" onclick="loadPage(\''+key+'\')">'
 			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
 			prjs += '<span>'+getProjectTitle(key)+'</span>'
-			if(getProjectPeriod(key)) prjs += '<span class="bottom">'+getProjectPeriod(key)+'</span>'
 			prjs += '</a>';
 		}
 		var wtr = {
 			'content':
-				"<h2>Presentation</h2><p>My name is Lucien Catonnet and I'm an engine programmer at DontNod Entertainment, previously video game programming student at ENJMIN.</p>"
+				"<h2>Presentation</h2><p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>"
 				+"<h2>Skills</h2><p>"
 				+"<b>Languages</b>: C/C++, Lua, x86, C#, Java, PHP, JavaScript, GLSL"
 				+"<br/><b>Software</b>: Unreal Engine 4, Visual Studio, Unity, Git, Perforce, Premake"
-				+"<br/><b>Libraries</b>: OpenGL 3.3, Wwise, FreeType"
+				+"<br/><b>APIs</b>: OpenGL 3.3, Vulkan, Wwise"
 				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
 				+"</p>"
 				+"<h2>Projects</h2>"+prjs+'<div style="clear:both;"></div>'

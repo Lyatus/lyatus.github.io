@@ -56,16 +56,15 @@ function loadPage(key){
 			tmp += page.content;
 		if(page.team){
 			tmp += '<h2>Teammates</h2><p>';
-			for(var m in page.team){
-				var name = page.team[m];
-				var member = people[name];
-				if(!member) continue;
-				tmp += '<b>'+name+'</b>'
-				if(member.role) tmp += ' ('+member.role+')';
-				if(member.links){
+			for(let team_member of page.team){
+				const info = people[team_member.name];
+				if(!info) continue;
+				tmp += '<b>'+team_member.name+'</b>'
+				if(team_member.role) tmp += ' ('+team_member.role+')';
+				if(info.links){
 					tmp += ': ';
-					for(var i in member.links)
-						tmp += link(i,member.links[i]);
+					for(let i in info.links)
+						tmp += link(i,info.links[i]);
 				}
 				tmp += '<br/>';
 			}
