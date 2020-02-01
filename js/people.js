@@ -1,4 +1,4 @@
-var people = {
+const people = {
 	'Léo Catonnet':{
 		'role':'UX/graphic designer',
 		'links':{

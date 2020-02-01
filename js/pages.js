@@ -1,4 +1,4 @@
-var pages = {
+const pages = {
 	'home':function(){
 		var prjs = '';
 		prjs += '<p class="printonly">';

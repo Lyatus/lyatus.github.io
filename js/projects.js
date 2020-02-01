@@ -1,4 +1,4 @@
-var projects = {
+const projects = {
 	'l-engine':{
 		'title':'L Engine',
 		'short':[
