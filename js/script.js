@@ -20,14 +20,14 @@ window.addEventListener('load', function() {
 	for(let key in links) {
 		links_element.innerHTML += link(key,links[key]);
 	}
-	loadPage(hash() || 'home');
+	load_page(hash() || 'home');
 });
 window.addEventListener('hashchange', function() {
-	loadPage(hash() || 'home');
+	load_page(hash() || 'home');
 });
 
 /* Page */
-function loadPage(key) {
+function load_page(key) {
 	if(currentPage==key) return;
 	else currentPage = key;
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
