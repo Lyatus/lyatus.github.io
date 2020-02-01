@@ -16,10 +16,6 @@ function imgload(e) {
 }
 window.addEventListener('load', function() {
 	main = document.getElementById('main');
-	const links_element = document.getElementById('links');
-	for(let key in links) {
-		links_element.innerHTML += link(key,links[key]);
-	}
 	load_page(hash() || 'home');
 });
 window.addEventListener('hashchange', function() {
