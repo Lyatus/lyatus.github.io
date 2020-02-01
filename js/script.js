@@ -21,6 +21,12 @@ window.addEventListener('load', function() {
 		linksElement.innerHTML += link(key,links[key]);
 	loadPage((hash())?hash():'home');
 });
+window.addEventListener('hashchange', function() {
+	const h = hash();
+	if(h) {
+		loadPage(h);
+	}
+});
 
 /* Page */
 function loadPage(key){
@@ -88,8 +94,4 @@ function hash(){
 	if(location.hash)
 		return location.hash.substr(1);
 	else return null;
-}
-function hashchange(){
-	var h = hash();
-	if(h) loadPage(h);
 }
