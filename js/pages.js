@@ -4,8 +4,10 @@ const pages = {
 		prjs += '<p class="printonly">';
 		for(let key in projects) {
 			if(projects[key].short) {
-				prjs += "<b>"+getProjectTitle(key)+"</b>";
-				if(getProjectPeriod(key)) prjs += ' ('+getProjectPeriod(key)+')';
+				prjs += "<b>"+projects[key].title+"</b>";
+				if(projects[key].period) {
+					prjs += ' ('+projects[key].period+')';
+				}
 				prjs += ":<indent>";
 				for(let i in projects[key].short) {
 					prjs += "- "+projects[key].short[i]+"<br/>";
@@ -16,8 +18,8 @@ const pages = {
 		prjs += '</p>';
 		for(let key in projects) {
 			prjs += '<a class="block project background screenonly" href="#'+key+'">'
-			prjs += '<img class="thumbnail" src="'+getProjectThumbnail(key)+'">'
-			prjs += '<span>'+getProjectTitle(key)+'</span>'
+			prjs += '<img class="thumbnail" src="'+projects[key].thumbnail+'">'
+			prjs += '<span>'+projects[key].title+'</span>'
 			prjs += '</a>';
 		}
 		return {

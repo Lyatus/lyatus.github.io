@@ -17,7 +17,7 @@ const projects = {
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>",
 		media: [{'img':'project/lengine/rendering.png'},{'img':'project/lengine/dithering.png'},{'img':'project/lengine/cubes.gif'}, {'img':'project/lengine/sandstorm.gif'}],
 		links: {'Documentation':'L','Repository':'https://github.com/Lyatus/L'},
-		start: '2011',
+		period: 'since 2011',
 	},
 	raccoon: {
 		thumbnail: 'project/raccoon/thumbnail.png',
@@ -48,7 +48,7 @@ const projects = {
 		team: [
 			{name:'Marjolaine Paz', role: 'UI/UX designer'},
 		],
-		start: '2019',
+		period: 'since 2019',
 	},
 	noidd: {
 		thumbnail: 'project/noidd/thumbnail.png',
@@ -69,7 +69,7 @@ const projects = {
 			{name: 'Mayk Navangi', role: 'Graphic designer'},
 		],
 		links: {'Website':'http://noidd.com'},
-		start: '2010',
+		period: 'since 2010',
 	},
 	'we-savages': {
 		title: 'We Savages',
@@ -97,8 +97,7 @@ const projects = {
 			{name: 'Pierre-Yves Revellin', role: 'Producer'},
 			{name: 'François Rizzo', role: 'Game designer'},
 		],
-		start: 'Oct. 2015',
-		end: 'Mar. 2016',
+		period: 'Oct. 2015 to Mar. 2016',
 	},
 	apoptosis: {
 		thumbnail: 'project/apoptosis/thumbnail.png',
@@ -126,8 +125,7 @@ const projects = {
 			'ThePixelHunt article':'http://www.thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous',
 			'FreeGamePlanet article':'https://www.freegameplanet.com/apoptosis-full-game-download/'
 		},
-		start: 'Mar. 2015',
-		end: 'Jun. 2015',
+		period: 'Mar. 2015 to Jun. 2015',
 	},
 	praytracer: {
 		thumbnail: 'project/praytracer/thumbnail.png',
@@ -137,23 +135,15 @@ const projects = {
 			+"<h2>Parallelism</h2><p>Seeing as the performance in a single thread wasn't enough to have even indecent scenes running at a decent framerate, I took a multithreaded approach to the problem. All threads have a PImage that they render to, at the end of the frame we blit all PImages to the screen. Synchronization is simply done with a semaphore. At first the PImages were fullscreen and threads drew lines in a strided fashion. Some artifacts appeared (random white dots across the screen) but the performance was obviously better than the single-threaded version. I've then changed it to have smaller PImages (the height of the screen divided by the number of threads) and blitted accordingly, it did not seem to improve performance and the artifacts were still there. Sadly Processing does not come with a profiler so I don't really know where to concentrate my efforts to improve performance (I think there's a Java one but I can't be bothered to hook it up with a Processing sketch).</p>",
 		media: [{'img':'project/praytracer/1.png'}],
 		links: {'Repository':'https://github.com/Lyatus/praytracer'},
-		date: 'Apr. 2015',
+		period: 'Apr. 2015',
 	},
 };
 
-function getProjectThumbnail(key) {
-	return (projects[key].thumbnail)?projects[key].thumbnail:'img/logo.png';
-}
-function getProjectTitle(key) {
-	return (projects[key].title)?projects[key].title:capitalize(key);
-}
-function getProjectPeriod(key) {
-	if(projects[key].start) {
-		if(projects[key].end)
-			return projects[key].start+' to '+projects[key].end;
-		else return 'since '+projects[key].start;
+window.addEventListener('load', function() {
+	for(let i in projects) {
+		projects[i].title = projects[i].title || capitalize(i);
+		projects[i].thumbnail = projects[i].thumbnail || 'img/logo.png';
+		projects[i].subtitle = projects[i].period;
+		pages[i] = projects[i];
 	}
-	else if(projects[key].date)
-		return projects[key].date;
-	return false;
-}
+});

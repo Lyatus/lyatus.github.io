@@ -30,12 +30,6 @@ window.addEventListener('hashchange', function() {
 function loadPage(key) {
 	if(currentPage==key) return;
 	else currentPage = key;
-	if(!pages[key]) { // It's not a standard page: it's a project
-		pages[key] = projects[key];
-		pages[key].title = getProjectTitle(key);
-		pages[key].subtitle = getProjectPeriod(key);
-		pages[key].thumbnail = getProjectThumbnail(key);
-	}
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
 	if(typeof pages[key] != 'string') {
 		let page = pages[key];
