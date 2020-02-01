@@ -11,15 +11,9 @@ function imgload(e) {
 		img.onclick = function(e){window.open(e.srcElement.src,"_blank")};
 	}
 }
-window.addEventListener('load', function() {
-	load_page(hash() || 'home');
-});
-window.addEventListener('hashchange', function() {
-	load_page(hash() || 'home');
-});
 
-/* Page */
-function load_page(key) {
+function update_page() {
+	const key = location.hash && location.hash.substr(1) || 'home';
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
 	if(typeof pages[key] != 'string') {
 		let page = pages[key];
@@ -70,8 +64,5 @@ function load_page(key) {
 	document.getElementById('main').innerHTML = pages[key];
 	window.scrollTo(0,0);
 }
-
-// History
-function hash() {
-	return location.hash && location.hash.substr(1);
-}
+window.addEventListener('load', update_page);
+window.addEventListener('hashchange', update_page);
