@@ -14,13 +14,13 @@ function imgload(e){
 		img.onclick = function(e){window.open(e.srcElement.src,"_blank")};
 	}
 }
-function start(){
+window.addEventListener('load', function() {
 	main = document.getElementById('main');
 	var linksElement = document.getElementById('links');
 	for(var key in links)
 		linksElement.innerHTML += link(key,links[key]);
 	loadPage((hash())?hash():'home');
-}
+});
 
 /* Page */
 function loadPage(key){
