@@ -81,7 +81,6 @@ function loadPage(key){
 	main.innerHTML = pages[key];
 	window.scrollTo(0,0);
 	location = "#"+key;
-	ga('send','pageview',location.pathname+location.hash);
 }
 
 // History
