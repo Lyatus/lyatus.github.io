@@ -1,5 +1,5 @@
 function link(name, url) {
-	return '<a class="link" href="'+url+'" target="_blank">'+name+'</a>';
+	return '<a class="link" href="'+url+'">'+name+'</a>';
 }
 function capitalize(str) {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -63,6 +63,11 @@ function update_page() {
 	}
 	document.getElementById('main').innerHTML = pages[key];
 	window.scrollTo(0,0);
+
+	// Make all outgoing links open a new tab
+	[...document.getElementsByTagName('a')]
+		.filter(a => a.href.startsWith('http'))
+		.forEach(a => a.target = '_blank');
 }
 window.addEventListener('load', update_page);
 window.addEventListener('hashchange', update_page);

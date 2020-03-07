@@ -51,8 +51,8 @@ const pages = {
 							title: 'DontNod Entertainment',
 							subtitle: 'engine programmer (October 2016 - now)',
 							items: [
-								'Working on <a target="_blank" href="https://www.tellmewhygame.com/">Tell Me Why</a> (PC/XB1)',
-								'Shipped <a target="_blank" href="http://www.vampyr-game.com/">Vampyr</a> (PC/PS4/XB1)',
+								'Working on <a href="https://www.tellmewhygame.com/">Tell Me Why</a> (PC/XB1)',
+								'Shipped <a href="http://www.vampyr-game.com/">Vampyr</a> (PC/PS4/XB1)',
 								'Built and improved narrative save and gameplay mechanisms with future projects in mind',
 								'Profiled and debugged on PS4 and XB1 games',
 							],

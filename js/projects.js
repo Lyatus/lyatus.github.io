@@ -32,7 +32,7 @@ const projects = {
 			"Source control integration to allow team development",
 		],
 		content:
-			"<h2>Presentation</h2><p>Raccoon is a web fantasy console. It's inspired by <a href=\"https://www.lexaloffle.com/pico-8.php\" target=\"_blank\">PICO-8</a> but aims at offering better tools (not made within the constraints of the fantasy console). This is why for this project I work with a UX designer to try and get people to make games the easiest way possible. Raccoon wants to bring together game creation with constraints and great tools.</p>"
+			"<h2>Presentation</h2><p>Raccoon is a web fantasy console. It's inspired by <a href=\"https://www.lexaloffle.com/pico-8.php\">PICO-8</a> but aims at offering better tools (not made within the constraints of the fantasy console). This is why for this project I work with a UX designer to try and get people to make games the easiest way possible. Raccoon wants to bring together game creation with constraints and great tools.</p>"
 			+"<h2>Console features</h2><p>"
 				+"- 20KiB of ROM to put your game assets<br/>"
 				+"  - 192 8x8 sprites<br/>"
