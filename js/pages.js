@@ -1,53 +1,102 @@
 const pages = {
 	home: function() {
-		let prjs = '';
-		prjs += '<p class="printonly">';
-		for(let key in projects) {
-			if(projects[key].short) {
-				prjs += "<b>"+projects[key].title+"</b>";
-				if(projects[key].period) {
-					prjs += ' ('+projects[key].period+')';
-				}
-				prjs += ":<indent>";
-				for(let i in projects[key].short) {
-					prjs += "- "+projects[key].short[i]+"<br/>";
-				}
-				prjs += "</indent>";
-			}
-		}
-		prjs += '</p>';
-		for(let key in projects) {
-			prjs += '<a class="block project background screenonly" href="#'+key+'">'
-			prjs += '<img class="thumbnail" src="'+projects[key].thumbnail+'">'
-			prjs += '<span>'+projects[key].title+'</span>'
-			prjs += '</a>';
-		}
+		const subsection = (o) =>
+			`${o.subtitle}${o.items ? `<indent>${o.items.map(i => `• ${i}<br/>`).join('')}</indent>`: '<br/>'}`;
+		const section = (title, o) =>
+			`<section class="${o.class || ''}">`
+			+ `<h2>${title}</h2>`
+			+ ((typeof o.content === 'string') ? o.content : (`<p>${o.content.map(e => `<subsection><b>${e.title}</b>: ${subsection(e)}</subsection>`).join('')}</p>`))
+			+ '</section>';
 		return {
 			content:
-				"<h2>Presentation</h2><p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>"
-				+"<h2>Skills</h2><p>"
-				+"<b>Languages</b>: C/C++, Lua, x86, C#, Java, PHP, JavaScript, GLSL"
-				+"<br/><b>Software</b>: Unreal Engine 4, Visual Studio, Unity, Git, Perforce, Premake"
-				+"<br/><b>APIs</b>: OpenGL 3.3, Vulkan, Wwise"
-				+"<br/><b>Spoken languages</b>: French (mother tongue), English (fluent)"
-				+"</p>"
-				+"<h2>Projects</h2>"+prjs+'<div style="clear:both;"></div>'
-				+"<h2>Experiences</h2><p>"
-				+"<b>DontNod Entertainment</b>: engine programmer (October 2016 - now)"
-				+"<indent>- Profiled and debugged on PS4 and XB1"
-				+"<br/>- Shipped Vampyr (PC/PS4/XB1)</indent>"
-				+"<b>Ubisoft Mobile</b>: engine programmer assistant (April 2016 - September 2016)"
-				+"<indent>- Put in place and cleaned precompiled headers for several projects of an in-house engine"
-				+"<br/>- Created a build system solution that could satisfy our many projects dependency needs"
-				+"<br/>- Debugged iOS games with the support team</indent>"
-				+"</p>"
-				+"<h2>Studies</h2><p>"
-				+"<b>ENJMIN</b>: Master's Degree in video game programming (2014 - 2016)"
-				+"<br/><b>Université de Picardie Jules Verne</b>: Bachelor's Degree in Computer Science (2011 - 2014)"
-				+"<br/><b>Lycée Robert de Luzarches</b>: Baccalauréat L (literature), Audiovisual specialization (2011)"
-				+"</p>"
-				+"<h2>Interests</h2><p>Graphic design / Cinema / Experimental programming / Woodworking</p>",
-			media:[{'img':'img/photo.jpg'}]
+				section('Presentation', {
+					class: 'screenonly',
+					content: '<p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>',
+				})
+				+ section('Skills', {
+					content: [
+						{
+							title: 'Languages',
+							subtitle: 'C/C++, JavaScript, PHP, Lua, GLSL',
+						},
+						{
+							title: 'Software',
+							subtitle: 'Unreal Engine 4, Visual Studio, Git, Perforce, CMake',
+						},
+						{
+							title: 'APIs',
+							subtitle: 'OpenGL 3.3, Vulkan',
+						},
+						{
+							title: 'Spoken languages',
+							subtitle: 'French (mother tongue), English (fluent)',
+						},
+					],
+				})
+				+ section('Projects', {
+					class: 'projects printonly',
+					content: Object.values(projects).filter(p => p.short).map(p => ({
+						title: p.title,
+						subtitle: p.period,
+						items: p.short,
+					})),
+				})
+				+ section('Projects', {
+					class: 'screenonly',
+					content:
+						Object.entries(projects).map(e =>
+							`<a class="block project background" href="#${e[0]}">
+							<img class="thumbnail" src="${e[1].thumbnail}">
+							<span>${e[1].title}</span>'
+							</a>`
+						).join('')
+						+ '<div style="clear:both;"></div>',
+				})
+				+ section('Experiences', {
+					class: 'experiences',
+					content: [
+						{
+							title: 'DontNod Entertainment',
+							subtitle: 'engine programmer (October 2016 - now)',
+							items: [
+								'Working on <a target="_blank" href="https://www.tellmewhygame.com/">Tell Me Why</a> (PC/XB1)',
+								'Shipped <a target="_blank" href="http://www.vampyr-game.com/">Vampyr</a> (PC/PS4/XB1)',
+								'Built and improved narrative save and gameplay mechanisms with future projects in mind',
+								'Profiled and debugged on PS4 and XB1 games',
+							],
+						},
+						{
+							title: 'Ubisoft Mobile',
+							subtitle: 'engine programmer assistant (April 2016 - September 2016)',
+							items: [
+								'Improved build times of an in-house engine',
+								'Worked on build system solution to satisfy many projects dependency needs',
+							],
+						},
+					],
+				})
+				+ section('Studies', {
+					content: [
+						{
+							title: 'ENJMIN',
+							subtitle: 'Master\'s Degree in video game programming (2014 - 2016)',
+						},
+						{
+							title: 'Université de Picardie Jules Verne',
+							subtitle: 'Bachelor\'s Degree in Computer Science (2011 - 2014)',
+						},
+						{
+							title: 'Lycée Robert de Luzarches',
+							subtitle: 'Baccalauréat L (literature), Audiovisual specialization (2011)',
+						},
+					],
+				})
+				+ section('Interests', {
+					content: '<p>Graphic design / Cinema / Experimental programming / Woodworking</p>',
+				}),
+			media: [
+				{'img':'img/photo.jpg'},
+			],
 		};
 	}
 };
