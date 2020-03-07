@@ -34,14 +34,6 @@ const pages = {
 					],
 				})
 				+ section('Projects', {
-					class: 'projects printonly',
-					content: Object.values(projects).filter(p => p.short).map(p => ({
-						title: p.title,
-						subtitle: p.period,
-						items: p.short,
-					})),
-				})
-				+ section('Projects', {
 					class: 'screenonly',
 					content:
 						Object.entries(projects).map(e =>
@@ -74,6 +66,14 @@ const pages = {
 							],
 						},
 					],
+				})
+				+ section('Projects', {
+					class: 'projects printonly',
+					content: Object.values(projects).filter(p => p.short).map(p => ({
+						title: p.title,
+						subtitle: p.period,
+						items: p.short,
+					})),
 				})
 				+ section('Studies', {
 					content: [
