@@ -21,7 +21,7 @@ h1 {
 	font-size: 64px;
 }
 h2 {
-	font-size: 32px;
+	font-size: 40px;
 	margin-left: 32px!important;
 	overflow: hidden;
 	clear: left;
@@ -68,11 +68,6 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 .link{
 	display: inline-block;
 	background-color: #efefef;
-}
-
-/* Header */
-#header span{
-	float: left;
 }
 
 /* Main */
@@ -155,6 +150,20 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 		background-color: transparent;
 	}
 
+	/* Header */
+	#header {
+		margin: auto;
+		text-align: center;
+	}
+	h1:nth-of-type(1) {
+		font-size: 52px;
+		font-weight: bold;
+	}
+	h1:nth-of-type(2) {
+		font-size: 48px;
+		margin-bottom: 24px;
+	}
+
 	/* Display plain URLs next to links*/
 	#main a:after {
     content: " (" attr(href) ")";
@@ -174,13 +183,21 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	.background {
 		background-color: #efefef;
 	}
+	#header span{
+		float: left;
+	}
 	main {
 		margin-bottom: 32px!important;
 	}
 }
 
-/* Desktop (animation) */
+/* Desktop */
 @media screen and (min-width: 865px) {
+	#header {
+		width: 704px;
+		float: left;
+	}
+
 	#logo .bottom, #logo .left, #logo .center{
 		-webkit-transition: 128ms;
 		transition: 128ms;
@@ -208,10 +225,7 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	main {
 		width: 864px;
 	}
-	#header {
-		width: 704px;
-	}
-	#logo, #header, #main, .block.block.project {
+	#logo, #main, .block.block.project {
 		float: left;
 	}
 	#logo, .block.project{
