@@ -52,12 +52,6 @@ const projects = {
 	},
 	noidd: {
 		thumbnail: 'project/noidd/thumbnail.png',
-		short: [
-			"Live music sharing website (http://noidd.com) made with friends as sole programmer",
-			"No framework, only HTML5/CSS3/JS/PHP/MYSQL",
-			"Interfacing with YouTube and SoundCloud APIs",
-			"Constant synchronization through WebSocket/XmlHttpRequest",
-		],
 		content:
 		"<h2>Presentation</h2><p>Noidd is a web application enabling its users to share music and videos live. People connect to channels in which they can post videos. Videos are streamed live to every person connected to the channel. People can change the video dynamically, creating a form of conversation.</p>"
 		+"<h2>History</h2><p>I've been working on this project from the very start as the sole programmer with the help of 4 graphic designers including my brother. We started this project in 2010, back when we were still undergraduate students, the first version of the site was raw and bulky. But during the last three years we all learned a lot, and our common goal was still the release of Noidd.</p>"
