@@ -96,7 +96,7 @@ const pages = {
 					content: [
 						{
 							title: 'Hobbies',
-							subtitle: 'Sound synthesis, music composition, woodworking'
+							subtitle: 'Sound synthesis, music composition, woodworking, game jams'
 						},
 						{
 							title: 'Books',
