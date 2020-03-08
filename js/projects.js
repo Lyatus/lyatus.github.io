@@ -5,6 +5,7 @@ const projects = {
 			"Public-domain modular C++ and Vulkan game engine",
 			"Fully deferred rendering pipeline",
 			"Register-based script virtual machine",
+			"Fiber-based task system",
 		],
 		content:
 			"<h2>Presentation</h2><p>The L Engine is a public-domain modular C++ and Vulkan game engine.</p>"
@@ -29,7 +30,8 @@ const projects = {
 		short: [
 			"Browser-based fantasy console",
 			"Hot-reload code/data mechanism",
-			"Source control integration to allow team development",
+			"Code editor with syntax highlighting and go-to-definition",
+			"Collaboration and sharing via source control",
 		],
 		content:
 			"<h2>Presentation</h2><p>Raccoon is a web fantasy console. It's inspired by <a href=\"https://lexaloffle.com/pico-8.php\">PICO-8</a> but aims at offering better tools (not made within the constraints of the fantasy console). This is why for this project I work with a UX designer to try and get people to make games the easiest way possible. Raccoon wants to bring together game creation with constraints and great tools.</p>"

@@ -53,8 +53,9 @@ const pages = {
 							items: [
 								'Working on <a href="https://tellmewhygame.com">Tell Me Why</a> (UE4, PC/XB1)',
 								'Shipped <a href="http://vampyr-game.com">Vampyr</a> (UE4, PC/PS4/XB1)',
-								'Built and improved narrative save and gameplay mechanisms with future projects in mind',
-								'Profiled and debugged on PS4 and XB1 games',
+								'Built generic gameplay mechanisms with future projects in mind',
+								'Built XSAPI OnlineSubsystem for UE4',
+								'Oversaw asset loading for various systems',
 							],
 						},
 						{
