@@ -76,7 +76,7 @@ const pages = {
 						items: p.short,
 					})),
 				})
-				+ section('Studies', {
+				+ section('Education', {
 					content: [
 						{
 							title: 'ENJMIN',
