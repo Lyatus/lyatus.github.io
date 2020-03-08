@@ -104,11 +104,11 @@ const pages = {
 						},
 						{
 							title: 'Video games',
-							subtitle: 'Divinity: Original Sin 1&2, TESV: Oblivion, Slay the Spire, Screeps, RimWorld, The Stanley Parable',
+							subtitle: 'Divinity: Original Sin 1&2, TESV: Oblivion, Slay the Spire, Screeps, RimWorld',
 						},
 						{
 							title: 'Music',
-							subtitle: 'Andy Shauf, The Clash, The Chemical Brothers, The Distillers, Garbage, Gorillaz, King Gizzard',
+							subtitle: 'The Clash, The Chemical Brothers, The Distillers, Garbage, Gorillaz, King Gizzard',
 						},
 					],
 				}),
