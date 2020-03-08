@@ -39,7 +39,7 @@ const pages = {
 						Object.entries(projects).map(e =>
 							`<a class="block project background" href="#${e[0]}">
 							<img class="thumbnail" src="${e[1].thumbnail}">
-							<span>${e[1].title}</span>'
+							<span>${e[1].title}</span>
 							</a>`
 						).join('')
 						+ '<div style="clear:both;"></div>',
