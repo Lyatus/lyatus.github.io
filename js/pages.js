@@ -13,6 +13,30 @@ const pages = {
 					class: 'screenonly',
 					content: '<p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>',
 				})
+				+ section('Experiences', {
+					class: 'experiences',
+					content: [
+						{
+							title: 'DontNod Entertainment',
+							subtitle: 'engine programmer (October 2016 - now)',
+							items: [
+								'Working on <a href="https://tellmewhygame.com">Tell Me Why</a> (Microsoft, UE4, PC/XB1)',
+								'Shipped <a href="http://vampyr-game.com">Vampyr</a> (Focus, UE4, PC/PS4/XB1)',
+								'Built generic gameplay mechanisms with future projects in mind',
+								'Built Microsoft Xbox Live Service API Online Subsystem for UE4',
+								'Oversaw asset loading for various systems',
+							],
+						},
+						{
+							title: 'Ubisoft Mobile',
+							subtitle: 'engine programmer assistant (April 2016 - September 2016)',
+							items: [
+								'Improved build times of an in-house engine',
+								'Worked on build system solution to satisfy many projects dependency needs',
+							],
+						},
+					],
+				})
 				+ section('Skills', {
 					content: [
 						{
@@ -43,30 +67,6 @@ const pages = {
 							</a>`
 						).join('')
 						+ '<div style="clear:both;"></div>',
-				})
-				+ section('Experiences', {
-					class: 'experiences',
-					content: [
-						{
-							title: 'DontNod Entertainment',
-							subtitle: 'engine programmer (October 2016 - now)',
-							items: [
-								'Working on <a href="https://tellmewhygame.com">Tell Me Why</a> (UE4, PC/XB1)',
-								'Shipped <a href="http://vampyr-game.com">Vampyr</a> (UE4, PC/PS4/XB1)',
-								'Built generic gameplay mechanisms with future projects in mind',
-								'Built XSAPI OnlineSubsystem for UE4',
-								'Oversaw asset loading for various systems',
-							],
-						},
-						{
-							title: 'Ubisoft Mobile',
-							subtitle: 'engine programmer assistant (April 2016 - September 2016)',
-							items: [
-								'Improved build times of an in-house engine',
-								'Worked on build system solution to satisfy many projects dependency needs',
-							],
-						},
-					],
 				})
 				+ section('Projects', {
 					class: 'projects printonly',
