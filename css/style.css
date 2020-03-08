@@ -166,8 +166,10 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 
 	/* Display plain URLs next to links*/
 	#main a:after {
-    content: " (" attr(href) ")";
-    font-weight: normal;
+    content: " " attr(shorthref);
+		font-weight: normal;
+		font-style: italic;
+		color: grey;
 	}
 
 	/* Hide media column */

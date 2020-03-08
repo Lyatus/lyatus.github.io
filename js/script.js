@@ -67,7 +67,13 @@ function update_page() {
 	// Make all outgoing links open a new tab
 	[...document.getElementsByTagName('a')]
 		.filter(a => a.href.startsWith('http'))
-		.forEach(a => a.target = '_blank');
+		.forEach(a => {
+			a.target = '_blank';
+			a.setAttribute('shorthref',
+				a.href
+				.replace(/^https?\:\/\//, '')
+				.replace(/\/$/, ''));
+		});
 }
 window.addEventListener('load', update_page);
 window.addEventListener('hashchange', update_page);
