@@ -92,7 +92,24 @@ const pages = {
 					],
 				})
 				+ section('Interests', {
-					content: '<p>Graphic design / Cinema / Experimental programming / Woodworking</p>',
+					content: [
+						{
+							title: 'Hobbies',
+							subtitle: 'Sound synthesis, music composition, woodworking'
+						},
+						{
+							title: 'Books',
+							subtitle: 'Game Engine Architecture, The Design of Everyday Things, Mona Chollet',
+						},
+						{
+							title: 'Video games',
+							subtitle: 'Divinity: Original Sin 1&2, TESV: Oblivion, Slay the Spire, Screeps, RimWorld, The Stanley Parable',
+						},
+						{
+							title: 'Music',
+							subtitle: 'Andy Shauf, The Clash, The Chemical Brothers, The Distillers, Garbage, Gorillaz, King Gizzard',
+						},
+					],
 				}),
 			media: [
 				{'img':'img/photo.jpg'},
