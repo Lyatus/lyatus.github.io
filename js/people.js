@@ -82,5 +82,13 @@ const people = {
 		'links':{
 			'LinkedIn':'https://linkedin.com/in/victor-gibaud-4722b310a'
 		}
+	},
+	'Freddy Clément':{
+		'links':{
+			'Web':'http://www.freddyclement.com/',
+			'Twitter':'https://twitter.com/diffty',
+			'LinkedIn':'https://www.linkedin.com/in/freddyclement/',
+			'GitHub':'https://github.com/diffty'
+		}
 	}
 };

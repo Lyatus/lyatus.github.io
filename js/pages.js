@@ -104,7 +104,7 @@ const pages = {
 						},
 						{
 							title: 'Video games',
-							subtitle: 'Divinity: Original Sin 1&2, TESV: Oblivion, Slay the Spire, Screeps, RimWorld',
+							subtitle: 'Divinity: Original Sin 1&2, TES4: Oblivion, Slay the Spire, Screeps, RimWorld',
 						},
 						{
 							title: 'Music',
