@@ -20,7 +20,7 @@ const pages = {
 							title: 'DontNod Entertainment',
 							subtitle: 'engine programmer (October 2016 - now)',
 							items: [
-								'Working on <a href="https://tellmewhygame.com">Tell Me Why</a> (Microsoft, UE4, PC/XB1)',
+								'Shipped <a href="https://tellmewhygame.com">Tell Me Why</a> (Microsoft, UE4, PC/XB1)',
 								'Shipped <a href="http://vampyr-game.com">Vampyr</a> (Focus, UE4, PC/PS4/XB1)',
 								'Built generic gameplay mechanisms with future projects in mind',
 								'Built Microsoft Xbox Live Service API Online Subsystem for UE4',
