@@ -60,7 +60,7 @@ const projects = {
 			{'img':'project/raccoon/architect.gif'},
 		],
 		links: {
-			Website: 'https://raccoon.lucien.cat',
+			Website: 'https://raccoon.computer',
 			Repository: 'https://github.com/Lyatus/raccoon',
 		},
 		team: [
