@@ -66,7 +66,7 @@ function update_page() {
 
 	// Make all outgoing links open a new tab
 	[...document.getElementsByTagName('a')]
-		.filter(a => a.href.startsWith('http'))
+		.filter(a => a.href.startsWith('http') && !a.href.startsWith(location.href))
 		.forEach(a => {
 			a.target = '_blank';
 			a.setAttribute('shorthref',
