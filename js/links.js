@@ -1,5 +1,5 @@
 const links = {
-	'Twitter':'https://twitter.com/LucienCatonnet',
+	'Twitter':'https://twitter.com/lutopia_t',
 	'LinkedIn':'https://www.linkedin.com/in/luciencatonnet',
 	'GitHub':'https://github.com/Lyatus',
 	'itch.io':'http://lutopia.itch.io',
