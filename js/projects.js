@@ -53,6 +53,12 @@ const projects = {
 			+"- Built-in documentation window, keep an eye on documentation as you make your game!<br/>"
 			+"- Support for GitHub synchronization, work on a game with your friends!<br/>"
 			+"</p>"
+			+"<h2>Games</h2><p>Here's a list of games made with raccoon:<br/>"
+			+'- <a href="https://raccoon.computer/?gh=Lyatus/ld44">Blood Fighters</a><br/>'
+			+'- <a href="https://raccoon.computer/?gh=Lyatus/ld45">Architect</a><br/>'
+			+'- <a href="https://raccoon.computer/?gh=Lyatus/ld46">Blip!</a><br/>'
+			+'- <a href="https://raccoon.computer/?gh=Lyatus/ld47">Stamp!</a><br/>'
+			+"</p>"
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>"
 		,
 		media: [
