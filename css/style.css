@@ -200,12 +200,18 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 		float: left;
 	}
 
+	/* Logo animation */
 	#logo .bottom, #logo .left, #logo .center{
 		-webkit-transition: 128ms;
 		transition: 128ms;
 	}
-	#logo:hover .bottom{width: 32px;}
-	#logo:hover .center{y:32px;}
+	#logo:hover .bottom {width: 32px;}
+	#logo:hover .center {y:32px;}
+
+	/* Logo pride */
+	.pride #logo .center {fill: #fff!important;}
+	.pride #logo .back {fill: #f5a9b8!important;}
+	.pride #logo .left, .pride #logo .bottom {fill: #5bcefa!important;}
 
 	.link {
 		-webkit-transition: background-color 128ms;

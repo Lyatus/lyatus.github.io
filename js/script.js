@@ -13,6 +13,11 @@ function imgload(e) {
 }
 
 function update_page() {
+	// Pride month
+	if((new Date()).getMonth() == 5) {
+		document.body.classList.add('pride');
+	}
+
 	const key = location.hash && location.hash.substr(1) || 'home';
 	if(typeof pages[key] == 'function') pages[key] = pages[key](); // Execute function if dynamic content
 	if(typeof pages[key] != 'string') {
