@@ -113,7 +113,7 @@ const pages = {
 					],
 				}),
 			media: [
-				{'img':'img/photo.jpg'},
+				//{'img':'img/photo.jpg'},
 			],
 		};
 	}
