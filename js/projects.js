@@ -17,10 +17,10 @@ const projects = {
 			+"<h2>Threading</h2><p>The engine uses a fiber-based task system, I was very much influenced by Christian Gyrling's <a href=\"https://gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine\">talk</a> about Naughty Dog's use for them in their job system. The task system is made up of a thread per core and N fibers, threads take control of fibers when there's a task in it, clients directly put tasks in free fiber slots, there is no queuing involved. Because of the very cooperative nature of fiber threading, the whole system uses only one semaphore to allow threads to go to sleep when there are no tasks left to do (usually during V-Sync). Locks are usually avoided, by prefering very specific algorithms and containers for a problem rather than the usual ones wrapped around a critical section. Currently the task system is used by physics, collisions, resource loading and frustum culling.</p>"
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>",
 		media: [
-			{img: 'project/lengine/rendering.png'},
-			{img: 'project/lengine/lights.png'},
-			{img: 'project/lengine/cubes.gif'},
-			{img: 'project/lengine/sandstorm.gif'},
+			{img: 'project/lengine/rendering.png', desc: 'Early mesh rendering'},
+			{img: 'project/lengine/lights.png', desc: 'Early deferred light rendering'},
+			{img: 'project/lengine/cubes.gif', desc: 'Early cube physics'},
+			{img: 'project/lengine/sandstorm.gif', desc: 'Sandstorm, game made for Ludum Dare 42'},
 		],
 		links: {'Documentation':'L','Repository':'https://github.com/Lyatus/L'},
 		period: 'since 2011',
@@ -62,8 +62,8 @@ const projects = {
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>"
 		,
 		media: [
-			{'img':'project/raccoon/bloodfighters.gif'},
-			{'img':'project/raccoon/architect.gif'},
+			{img: 'project/raccoon/bloodfighters.gif', desc: 'Blood Fighters, game made for Ludum Dare 44'},
+			{img: 'project/raccoon/architect.gif', desc: 'Architect, game made for Ludum Dare 45'},
 		],
 		links: {
 			Website: 'https://raccoon.computer',
@@ -108,11 +108,11 @@ const projects = {
 			+"<h2>Patrols</h2><p>I've also worked on a patrol system, meaning a squad of characters supposed to be looking for the main character. Each member of the squad is able to determine if they can see the target and remembers their latest position and rotation. Because of this, a squad can determine if a certain point in space has been recently seen by one of the members of the squad. This mechanism is how squad members rule out search options and tend to go look at \"non-recently-seen\" locations. It worked with good performance and could easily find most players.</p>"
 			+"<h2>Quad</h2><p>At some point it was decided to have a scene on a quad bike driven by a friend of the main character. I created the AI that drove it, using UE4's vehicle system, navmeshes, trigonometry and a few raycasts for safety.</p>",
 		media: [
-			{yt: 'nz7gvwfISFY'},
-			{img: 'project/wesavages/flocking.gif'},
-			{img: 'project/wesavages/patrol.gif'},
-			{img: 'project/wesavages/quad.gif'},
-			{img: 'project/wesavages/screen0.png'},
+			{yt: 'nz7gvwfISFY', desc: 'Walkthrough of the demo'},
+			{img: 'project/wesavages/flocking.gif', desc: 'Crowd with vector fields'},
+			{img: 'project/wesavages/patrol.gif', desc: 'Guard search AI, blue is player, green are guards, red are search targets'},
+			{img: 'project/wesavages/quad.gif', desc: 'Quad bike following path'},
+			{img: 'project/wesavages/screen0.png', desc: 'Environment art'},
 		],
 		team: [
 			{name: 'Marc-Antoine Archier', role: 'Sound designer'},
@@ -141,10 +141,10 @@ const projects = {
 		+"<h2>Design</h2><p>We chose to have one of the most simple interaction possible (a mouse click) to emphasize this \"uneasiness\". The question the game asks to the player is whether they want to continue or not, without proposing any alternative solution. Even though the expansion of the disease can be graphically pleasant to watch, the interaction has to be practically uninteresting in order to have meaning. It had to be the opposite of fun.</p>"
 		+"<h2>Technology</h2><p>The game uses my own C++ engine, which I had to interface with Wwise as requested by the sound designer. It uses voxels (marching cubes) and cellular automata to attain this special organic feel we wanted for the disease. I did try to implement marching cubes in Unity first but it wasn't fast enough to support per-frame automaton updating. I implemented many things in the engine to support developing this game, including template multidimensional trees for fast space queries, a camera class (and the matrix tools that go with it) and a pool allocator for memory efficiency.</p>",
 		media: [
-			{yt: 'tMwTOBmPpXQ'},
+			{yt: 'tMwTOBmPpXQ', desc: 'Walkthrough of the experience'},
 			{img: 'project/apoptosis/3.png'},
-			{img: 'project/apoptosis/1.png'},
-			{img: 'project/apoptosis/2.png'},
+			{img: 'project/apoptosis/1.png', desc: 'Close view of a tumor with inner veins visible'},
+			{img: 'project/apoptosis/2.png', desc: 'Wide view of the stage of the experience'},
 		],
 		team: [
 			{name: 'Gaspard Morel', role: 'Sound designer'},
@@ -167,7 +167,7 @@ const projects = {
 			+"<h2>Ray-tracing</h2><p>It was my first ever ray-tracer and considering the language I went with a very object-oriented design. I've implemented a few shapes like planes, discs, spheres and cubes ; and also diffuse colors and shininess (specular color is always the same as diffuse). I wanted to do reflection too but considering the current state of the performance I thought it wiser not to. I think the most obvious problem is that I have no spatial structure to cull objects, I have to iterate over all of them. Although it seems to me like doing efficient culling with ray-tracing is way harder than with ray-marching. Apart from those obvious algorithmic problems, cache-locality is probably awful too.</p>"
 			+"<h2>Parallelism</h2><p>Seeing as the performance in a single thread wasn't enough to have even indecent scenes running at a decent framerate, I took a multithreaded approach to the problem. All threads have a PImage that they render to, at the end of the frame we blit all PImages to the screen. Synchronization is simply done with a semaphore. At first the PImages were fullscreen and threads drew lines in a strided fashion. Some artifacts appeared (random white dots across the screen) but the performance was obviously better than the single-threaded version. I've then changed it to have smaller PImages (the height of the screen divided by the number of threads) and blitted accordingly, it did not seem to improve performance and the artifacts were still there. Sadly Processing does not come with a profiler so I don't really know where to concentrate my efforts to improve performance (I think there's a Java one but I can't be bothered to hook it up with a Processing sketch).</p>",
 		media: [
-			{img: 'project/praytracer/1.png'},
+			{img: 'project/praytracer/1.png', desc: 'Example scene'},
 		],
 		links: {'Repository':'https://github.com/Lyatus/praytracer'},
 		period: 'April 2015',
