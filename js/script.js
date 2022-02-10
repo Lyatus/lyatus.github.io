@@ -32,11 +32,15 @@ function update_page() {
 		}
 		if(page.media){
 			tmp += '<div id="media">';
-			for(var m in page.media)
-				if(page.media[m].img)
-					tmp += '<img onload="imgload(event)" src="'+page.media[m].img+'"/>';
-				else if(page.media[m].yt)
-					tmp += '<iframe width="420" height="236" src="https://www.youtube.com/embed/'+page.media[m].yt+'" frameborder="0" allowfullscreen></iframe>';
+			for(let m of page.media) {
+				if(m.img)
+					tmp += `<img onload="imgload(event)" src="${m.img}"/>`;
+				else if(m.yt) {
+					tmp += `<iframe width="420" height="236" src="https://www.youtube.com/embed/${m.yt}" frameborder="0" allowfullscreen></iframe>`;
+				} else if(m.snd) {
+					tmp += `<audio controls src="${m.snd}"></audio>`;
+				}
+			}
 			tmp += '</div>';
 		}
 		if(page.content)
