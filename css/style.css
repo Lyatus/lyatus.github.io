@@ -87,6 +87,8 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	margin-right: 4px;
 	margin-bottom: 4px;
 }
+
+/* Media */
 #media{
 	float: right;
 	margin-left: 4px;
@@ -94,8 +96,20 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 	padding-bottom: 4px;
 	background-color: white; /* Avoid other backgrounds under media */
 }
-#media>*{max-width: 300px;display:block;}
-#media>*:not(:first-child){margin-top: 8px;} /* Vertical space inbetween media */
+#media figure:not(:first-child) {
+	margin-top: 8px; /* Vertical space inbetween media */
+}
+#media figure * {
+	max-width: 300px;
+	display: block;
+}
+#media figcaption {
+	width: calc(300px - 8px - 8px);
+	border-left: solid 8px #efefef;
+	padding: 4px;
+}
+
+/* Links */
 #page_links{margin-top: 28px;} /* Separate links from page body */
 
 /* Projects (print) */
@@ -274,7 +288,7 @@ h1, h2, h3, #logo, #header, .block, #main p, #media>*{
 		max-width: 33%;
 		padding-right: 8px;
 	}
-	#media>* {
+	#media figure * {
 		max-width: 100%;
 	}
 	.block {

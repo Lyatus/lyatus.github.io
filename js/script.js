@@ -33,6 +33,7 @@ function update_page() {
 		if(page.media){
 			tmp += '<div id="media">';
 			for(let m of page.media) {
+				tmp += '<figure>';
 				if(m.img)
 					tmp += `<img onload="imgload(event)" src="${m.img}"/>`;
 				else if(m.yt) {
@@ -40,6 +41,10 @@ function update_page() {
 				} else if(m.snd) {
 					tmp += `<audio controls src="${m.snd}"></audio>`;
 				}
+				if(m.desc) {
+					tmp += `<figcaption>${m.desc}</figcaption>`;
+				}
+				tmp += '</figure>'
 			}
 			tmp += '</div>';
 		}
