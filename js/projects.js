@@ -14,7 +14,7 @@ const projects = {
 			+"<h2>Rendering</h2><p>The rendering pipeline uses Vulkan, it's fully deferred, the geometry buffer is made up of base color in 3 bytes, view-space normals in 2 16-bit floats (using Lambert Azimuthal Equal-Area projection), metalness in 1 byte, roughness in a 16-bit float, emission in a 16-bit float, and the 24-bit depth buffer is used to reconstruct position with the inverse view*projection matrix.</p>"
 			+"<h2>Physics</h2><p>The collision system uses the separating axis theorem to support boxes and spheres for the moment and uses an AABB dynamic tree as a broadphase. The collision system fires events to scripts on the same entity to allow custom reactions.</p>"
 			+"<h2>Scripting</h2><p>Bytecode can be executed in a register-based virtual machine. Most of the bytecode is inspired by <a href=\"http://underpop.online.fr/l/lua/docs/a-no-frills-introduction-to-lua-5.1-vm-instructions.pdf\">Lua's bytecode</a>. All variables in the virtual machine are represented by a dynamic type mechanism resembling <a href=\"https://en.cppreference.com/w/cpp/utility/variant\">std::variant</a>.</p>"
-			+"<h2>Threading</h2><p>The engine uses a fiber-based task system, I was very much influenced by Christian Gyrling's <a href=\"http://gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine\">talk</a> about Naughty Dog's use for them in their job system. The task system is made up of a thread per core and N fibers, threads take control of fibers when there's a task in it, clients directly put tasks in free fiber slots, there is no queuing involved. Because of the very cooperative nature of fiber threading, the whole system uses only one semaphore to allow threads to go to sleep when there are no tasks left to do (usually during V-Sync). Locks are usually avoided, by prefering very specific algorithms and containers for a problem rather than the usual ones wrapped around a critical section. Currently the task system is used by physics, collisions, resource loading and frustum culling.</p>"
+			+"<h2>Threading</h2><p>The engine uses a fiber-based task system, I was very much influenced by Christian Gyrling's <a href=\"https://gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine\">talk</a> about Naughty Dog's use for them in their job system. The task system is made up of a thread per core and N fibers, threads take control of fibers when there's a task in it, clients directly put tasks in free fiber slots, there is no queuing involved. Because of the very cooperative nature of fiber threading, the whole system uses only one semaphore to allow threads to go to sleep when there are no tasks left to do (usually during V-Sync). Locks are usually avoided, by prefering very specific algorithms and containers for a problem rather than the usual ones wrapped around a critical section. Currently the task system is used by physics, collisions, resource loading and frustum culling.</p>"
 			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>",
 		media: [
 			{img: 'project/lengine/rendering.png'},
@@ -89,7 +89,7 @@ const projects = {
 			{name: 'Mayk Navangi', role: 'Graphic designer'},
 		],
 		links: {
-			Website: 'http://noidd.com',
+			Website: 'https://noidd.com',
 		},
 		period: 'since 2010',
 	},
@@ -152,10 +152,10 @@ const projects = {
 			{name: 'François Rizzo', role: 'Writer / Game designer'},
 		],
 		links: {
-			'itch.io':'http://lutopia.itch.io/apoptosis',
+			'itch.io':'https://lutopia.itch.io/apoptosis',
 			'KillScreen article':'https://killscreen.com/articles/a-narrative-experience-where-you-are-the-cancer/',
-			'OuJeViPo article':'http://oujevipo.fr/general/5081-apoptosis/',
-			'ThePixelHunt article':'http://thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous',
+			'OuJeViPo article':'https://oujevipo.fr/general/5081-apoptosis/',
+			'ThePixelHunt article':'https://thepixelhunt.com/newsgames/dans-apoptosis-le-cancer-cest-vous',
 			'FreeGamePlanet article':'https://freegameplanet.com/apoptosis-full-game-download/'
 		},
 		period: 'March 2015 to June 2015',
