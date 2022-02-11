@@ -172,6 +172,20 @@ const projects = {
 		links: {'Repository':'https://github.com/Lyatus/praytracer'},
 		period: 'April 2015',
 	},
+	rationalist: {
+		thumbnail: 'project/rationalist/thumbnail.png',
+		content:
+			"<h2>Presentation</h2><p>One night during dinner with friends, we were jokingly listing movies with numbers in their titles, each trying to continue the sequence. We then started talking about how certain movies have even more concrete values in their titles (such as distances, durations, etc.) and how each of these values could be compared to sort a list. That's how the idea for rationalist came to be. As stupid and useless a database to create, it felt like a thing I had to do.</p>"
+			+"<h2>Technology</h2><p>There isn't much technology inside this project but a few small interesting problems. For units, it was imperative to convert everything to a standard unit, and I didn't want the entries in the database to do it manually, so data is actually entered with the original unit (e.g. miles) and then the script will convert it to the standard unit for that criterion (e.g. meters). For monetary values, I'm actually fetching currency rates via an API to convert from pounds or francs into USD (which is the standard unit in this case). For sorting colors, I've used a conversion from RGB to HSL and then using hue, saturation and lightness (in that order) to sort the colors, which is not ideal but at least gives a pretty nice rainbow of colors. For displaying the list, I use various APIs (<a href=\"https://musicbrainz.org\">musicbrainz</a>, <a href=\"https://coverartarchive.org\">coverartarchive</a> and media-imdb) to find information and especially cover art. I also try to create coherent links to the content, via Wikipedia searches or YouTube searches, when I can't make a direct link to the IMDB entry.</p>",
+		team: [
+			{name: 'Marjolaine Paz', role: 'Styling'},
+		],
+		links: {
+			'Repository':'https://github.com/Lyatus/rationalist',
+			'Website':'https://rationalist.lutopia.net',
+		},
+		period: 'since May 2018',
+	},
 };
 
 window.addEventListener('load', function() {
