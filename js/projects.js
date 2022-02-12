@@ -207,7 +207,7 @@ const projects = {
 	antitris: {
 		thumbnail: 'project/antitris/thumbnail.png',
 		content:
-			"<h2>Presentation</h2><p>Antitris is a small game that I created before going to ENJMIN as an exercise. It used to be in C++ with an old version of <a href=\"#l-engine\">my engine</a> but I ended up rewriting it for the web. The gameplay is supposed to be the opposite of Tetris: making tetrominoes of the same color from lines of four blocks of color. I've never reimplemented to scoring system in the web version. One problem with the gameplay that became obvious with time is that it's a bit hard to predict how tetrominoes are going to be detected (as opposed to lines in Tetris where it's very simple to understand), which means there are pretty much no advanced strategies, I haven't found a way to fix this problem yet.</p>",
+			"<h2>Presentation</h2><p>Antitris is a small game that I created before going to ENJMIN as an exercise. It used to be in C++ with an old version of <a href=\"#l-engine\">my engine</a> but I ended up rewriting it for the web. The gameplay is supposed to be the opposite of Tetris: making tetrominoes of the same color from lines of four blocks of color. One problem with the gameplay that became obvious with time is that it's a bit hard to predict how tetrominoes are going to be detected (as opposed to lines in Tetris where it's very simple to understand), which means there are pretty much no advanced strategies, I haven't found a way to fix this problem yet.</p>",
 		team: [
 			{name: 'Marjolaine Paz', role: 'Graphic Design'},
 		],
