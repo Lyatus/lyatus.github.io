@@ -21,7 +21,7 @@ const pages = {
 							subtitle: 'engine programmer (October 2016 - now)',
 							items: [
 								'Shipped <a href="https://tellmewhygame.com">Tell Me Why</a> (Microsoft, UE4, PC/XB1)',
-								'Shipped <a href="http://vampyr-game.com">Vampyr</a> (Focus, UE4, PC/PS4/XB1)',
+								'Shipped <a href="https://en.wikipedia.org/wiki/Vampyr_(video_game)">Vampyr</a> (Focus, UE4, PC/PS4/XB1)',
 								'Built generic gameplay mechanisms with future projects in mind',
 								'Built Microsoft Xbox Live Service API Online Subsystem for UE4',
 								'Oversaw asset loading for various systems',
