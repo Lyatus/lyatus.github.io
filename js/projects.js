@@ -160,6 +160,23 @@ const projects = {
 		},
 		period: 'March 2015 to June 2015',
 	},
+	robin: {
+		content:
+			"<h2>Presentation</h2><p>Robin is a project to create a <a href=\"https://github.com/nothings/single_file_libs\">single-header</a> <a href=\"https://en.wikipedia.org/wiki/MIDI\">MIDI</a>-compliant <a href=\"https://en.wikipedia.org/wiki/Frequency_modulation_synthesis\">frequency modulation synthesizer</a> in C.</p>"
+			+"<h2>Frequency modulation</h2><p>Robin is a frequency modulation synth, which means that it creates sounds by combining sine waves in various ways. Each operator generates a sine wave, and can affect each operator's sine wave phase. This allows to create rich sounds without the need for sound samples, which is perfect for a small library that would be cluttered by additional data.</p>"
+			+"<h2>General MIDI</h2><p>Robin not only complies with MIDI but also has a <a href=\"https://en.wikipedia.org/wiki/General_MIDI\">General MIDI</a> configuration provided with it (which means that even though robin itself is a single file, there is a second file for the General MIDI configuration, please don't sue me). The goal of that configuration is to have robin programs for each General MIDI instruments that sound as good as possible. Currently the programs are still very primitive and reused multiple times (the same program is used for all types of pianos for instance). The configuration is bound to advance faster once robin has decent program editor.</p>"
+			+"<h2>Command-line interface</h2><p>For testing purposes I've developed a command-line interface alongside the library in the same repository. It uses the General MIDI configuration by default. The <code>play</code> command reads a MIDI file and directly plays it, while the <code>render</code> command creates a .wav file for it. The <code>edit</code> command is a crude program editor.</p>"
+			+"<h2>JUCE</h2><p>I'm also currently working on a VST plugin made with <a href=\"https://en.wikipedia.org/wiki/JUCE\">JUCE</a> but it is not available yet, it should make it possible to use robin inside any common <a href=\"https://en.wikipedia.org/wiki/Digital_audio_workstation\">DAW</a>.</p>",
+		media: [
+			{img: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Phase-modulation.gif', desc: 'Phase-modulation in a gif'},
+			{snd: 'project/robin/outset_island.ogg', desc: 'The Legend of Zelda: The Wind Waker, Outset Island'},
+			{snd: 'project/robin/stayin_alive.ogg', desc: 'The Bee Gees, Stayin\' Alive'},
+		],
+		links: {
+			'Repository':'https://github.com/Lyatus/robin',
+		},
+		period: 'since September 2019',
+	},
 	praytracer: {
 		thumbnail: 'project/praytracer/thumbnail.png',
 		content:
