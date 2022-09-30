@@ -1,7 +1,7 @@
 const links = {
 	'Twitter':'https://twitter.com/lutopia_t',
 	'Mastodon':'https://mastodon.social/@lutopia',
-	'LinkedIn':'https://www.linkedin.com/in/luciencatonnet',
+	'LinkedIn':'https://www.linkedin.com/in/lucatonnet',
 	'GitHub':'https://github.com/Lyatus',
 	'itch.io':'http://lutopia.itch.io',
 };
