@@ -161,6 +161,7 @@ const projects = {
 		period: 'March 2015 to June 2015',
 	},
 	robin: {
+		thumbnail: 'project/robin/thumbnail.png',
 		content:
 			"<h2>Presentation</h2><p>Robin is a project to create a <a href=\"https://github.com/nothings/single_file_libs\">single-file</a> <a href=\"https://en.wikipedia.org/wiki/MIDI\">MIDI</a>-compliant <a href=\"https://en.wikipedia.org/wiki/Frequency_modulation_synthesis\">frequency modulation synthesizer</a> in C.</p>"
 			+"<h2>Single-file library</h2><p>Robin is a single-file library to be as easy to use and distribute as possible. It does not do any memory allocating because everything is kept inside the <code>rbn_instance</code> structure that the user has to allocate (which can even be on the stack if that's your style). It is accessible both in C and C++ (via <code>extern \"C\"</code>), and is distributed under the Unlicense (public domain equivalent).</p>"
