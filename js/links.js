@@ -1,10 +1,10 @@
 const links = {
-	'Twitter':'https://twitter.com/lutopia_t',
-	'Mastodon':'https://mastodon.social/@lutopia',
-	'LinkedIn':'https://www.linkedin.com/in/lucatonnet',
-	'GitHub':'https://github.com/Lyatus',
-	'itch.io':'http://lutopia.itch.io',
-	'SoundCloud':'https://soundcloud.com/clean-tonic-tune',
+	'🐤Twitter':'https://twitter.com/lutopia_t',
+	'🐘Mastodon':'https://mastodon.social/@lutopia',
+	'👩‍💼LinkedIn':'https://www.linkedin.com/in/lucatonnet',
+	'💾GitHub':'https://github.com/Lyatus',
+	'🎮itch.io':'http://lutopia.itch.io',
+	'🎶SoundCloud':'https://soundcloud.com/clean-tonic-tune',
 };
 
 window.addEventListener('load', function() {
