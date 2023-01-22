@@ -45,7 +45,7 @@ const pages = {
 						},
 						{
 							title: 'Software',
-							subtitle: 'Unreal Engine 4, Visual Studio, Git, Perforce, CMake',
+							subtitle: 'Unreal Engine 5, Visual Studio, Git, Perforce, CMake',
 						},
 						{
 							title: 'APIs',
