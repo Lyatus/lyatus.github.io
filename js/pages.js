@@ -20,11 +20,11 @@ const pages = {
 							title: 'DontNod Entertainment',
 							subtitle: 'engine programmer (October 2016 - now)',
 							items: [
+								'Working on <a href="https://www.focus-entmt.com/en/games/banishers-ghosts-of-new-eden">Banishers</a> (Focus, UE5, PC/PS5/XS)',
 								'Shipped <a href="https://tellmewhygame.com">Tell Me Why</a> (Microsoft, UE4, PC/XB1)',
 								'Shipped <a href="https://en.wikipedia.org/wiki/Vampyr_(video_game)">Vampyr</a> (Focus, UE4, PC/PS4/XB1)',
-								'Built generic gameplay mechanisms with future projects in mind',
+								'Saving, online, debug tools, level streaming, etc.',
 								'Built Microsoft Xbox Live Service API Online Subsystem for UE4',
-								'Oversaw asset loading for various systems',
 							],
 						},
 						{
