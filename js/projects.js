@@ -180,6 +180,22 @@ const projects = {
 		},
 		period: 'since September 2019',
 	},
+	steve: {
+		thumbnail: 'project/steve/thumbnail.png',
+		content:
+			"<h2>Presentation</h2><p>Steve is a project to create a program that can output randomly generated music (as a <a href=\"https://en.wikipedia.org/wiki/MIDI#Standard_files\">Standard MIDI File</a>) from a configuration.</p>"
+			+"<h2>Configurations</h2><p>Configurations can be very broad or very specific, they allow choosing from a selection of tempos, chords, scales, instruments, time signatures, etc. They can be created by a client program or they can be provided as JSON to the command-line interface. The JSON configurations can inherit from other configurations to make it easier to go from the broad to the specific. Some configurations are provided with the project.</p>"
+			+"<h2>Creators</h2><p>Creators are classes that define the way a track is going to generate its content. For instance, a bass creator would try to create a bass line in the low notes that follows the chord progression and repeats itself.</p>"
+			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>",
+		media: [
+			{snd: 'project/steve/Major_B_180.ogg', desc: 'Music box piece in B (January 2021)'},
+			{snd: 'project/steve/Major_B_130.ogg', desc: 'Piano piece in B (July 2020)'},
+		],
+		links: {
+			'Repository':'https://github.com/Lyatus/steve',
+		},
+		period: 'since 2011',
+	},
 	praytracer: {
 		thumbnail: 'project/praytracer/thumbnail.png',
 		content:
