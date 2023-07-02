@@ -108,7 +108,7 @@ const pages = {
 						},
 						{
 							title: 'Music',
-							subtitle: 'The Clash, The Chemical Brothers, The Distillers, Garbage, Gorillaz, King Gizzard',
+							subtitle: 'The Clash, The Chemical Brothers, The Distillers, Garbage, Gorillaz, Grimes',
 						},
 					],
 				}),
