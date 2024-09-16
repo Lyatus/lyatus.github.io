@@ -53,7 +53,7 @@ const pages = {
 						},
 						{
 							title: 'Spoken languages',
-							subtitle: 'French (mother tongue), English (fluent)',
+							subtitle: 'French (native), English (fluent)',
 						},
 					],
 				})
