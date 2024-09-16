@@ -11,7 +11,7 @@ const pages = {
 			content:
 				section('Presentation', {
 					class: 'screenonly',
-					content: '<p>Currently an engine programmer at DontNod Entertainment, previously a video game programming student at ENJMIN.</p>',
+					content: '<p>Currently an engine programmer at <a href="https://dont-nod.com">DontNod Entertainment</a>, previously a video game programming student at <a href="https://enjmin.cnam.fr">ENJMIN</a>.</p>',
 				})
 				+ section('Experiences', {
 					class: 'experiences',
