@@ -1,8 +1,7 @@
 const links = {
-	//'🐤Twitter':'https://twitter.com/lutopia_t',
 	'🐘Mastodon':'https://mastodon.social/@lutopia',
 	'👩‍💼LinkedIn':'https://www.linkedin.com/in/lucatonnet',
-	'💾GitHub':'https://github.com/Lyatus',
+	'💾GitHub':'https://github.com/lut0pia',
 	'🎮itch.io':'http://lutopia.itch.io',
 	'🎶SoundCloud':'https://soundcloud.com/clean-tonic-tune',
 };
