@@ -22,7 +22,7 @@ const projects = {
 			{img: 'project/lengine/cubes.gif', desc: 'Early cube physics'},
 			{img: 'project/lengine/sandstorm.gif', desc: 'Sandstorm, game made for Ludum Dare 42'},
 		],
-		links: {'Documentation':'L','Repository':'https://github.com/Lyatus/L'},
+		links: {'Documentation':'L','Repository':'https://github.com/lut0pia/L'},
 		period: 'since 2011',
 	},
 	raccoon: {
@@ -67,7 +67,7 @@ const projects = {
 		],
 		links: {
 			Website: 'https://raccoon.computer',
-			Repository: 'https://github.com/Lyatus/raccoon',
+			Repository: 'https://github.com/lut0pia/raccoon',
 		},
 		team: [
 			{name:'Marjolaine Paz', role: 'UI/UX designer'},
@@ -176,7 +176,7 @@ const projects = {
 			{snd: 'project/robin/stayin_alive.ogg', desc: 'The Bee Gees, Stayin\' Alive'},
 		],
 		links: {
-			'Repository':'https://github.com/Lyatus/robin',
+			'Repository':'https://github.com/lut0pia/robin',
 		},
 		period: 'since September 2019',
 	},
@@ -193,7 +193,7 @@ const projects = {
 			{snd: 'project/steve/Major_B_130.ogg', desc: 'Piano piece in B (July 2020)'},
 		],
 		links: {
-			'Repository':'https://github.com/Lyatus/steve',
+			'Repository':'https://github.com/lut0pia/steve',
 		},
 		period: 'since 2011',
 	},
@@ -207,7 +207,7 @@ const projects = {
 			media: [
 			{img: 'project/praytracer/1.png', desc: 'Example scene'},
 		],
-		links: {'Repository':'https://github.com/Lyatus/praytracer'},
+		links: {'Repository':'https://github.com/lut0pia/praytracer'},
 		period: 'April 2015',
 	},
 	rationalist: {
@@ -220,7 +220,7 @@ const projects = {
 			{name: 'Marjolaine Paz', role: 'Styling'},
 		],
 		links: {
-			'Repository':'https://github.com/Lyatus/rationalist',
+			'Repository':'https://github.com/lut0pia/rationalist',
 			'Website':'https://rationalist.lutopia.net',
 		},
 		period: 'since May 2018',
@@ -234,7 +234,7 @@ const projects = {
 			{name: 'Marjolaine Paz', role: 'Graphic Design'},
 		],
 		links: {
-			'Repository':'https://github.com/Lyatus/antitris',
+			'Repository':'https://github.com/lut0pia/antitris',
 			'Website':'https://lutopia.net/antitris',
 		},
 		period: '2014',
