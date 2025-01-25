@@ -197,6 +197,17 @@ const projects = {
 		},
 		period: 'since 2011',
 	},
+	radio: {
+		thumbnail: 'project/radio/thumbnail.png',
+		content:
+			"<h2>Presentation</h2><p>Radio is a project to combine <a href=\"#steve\">Steve</a> and <a href=\"#robin\">Robin</a> into a website that provides infinite music. It is live, you can find a link below.</p>"
+			+"<h2>Sources</h2><p>The sources are publicly available on Github under the Unlicense (public-domain equivalent license). You can find a link below.</p>",
+		links: {
+			Website: 'https://radio.lutopia.net/',
+			Repository:'https://github.com/lut0pia/radio',
+		},
+		period: 'since 2024',
+	},
 	praytracer: {
 		thumbnail: 'project/praytracer/thumbnail.png',
 		content:
